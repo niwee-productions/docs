@@ -11,17 +11,17 @@ The NiWee CLI is a condensed bash package that allows you to quickly create new 
   title="Install on Windows WSL"
   description="Install the NiWee CLI on any Windows version running WSL1 or WSL2."
   buttonText="Install"
-  href="/docs/intro/windows-wsl"
+  href="/intro/windows-wsl"
 />
 <CTACard
   title="Install on Linux"
   description="Install the NiWee CLI on Debian, Ubuntu, Zorin, Fedora, Red Hat, Arch, Manjaro, Endeavor, Garuda & more !"
   buttonText="Install"
-  href="/docs/intro/linux"
+  href="/intro/linux"
 />
 <CTACard
   title="Install on MacOS"
   description="Install the MacOS variant of the CLI using homebrew."
   buttonText="Install"
-  href="/docs/intro/macos"
+  href="/intro/macos"
 />
