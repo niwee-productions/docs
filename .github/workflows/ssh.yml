@@ -7,7 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  deploy:
+    needs: [build]
 
     runs-on: ubuntu-latest
 
@@ -28,4 +29,3 @@ jobs:
           git pull origin main
           yarn install
           yarn build
-```
