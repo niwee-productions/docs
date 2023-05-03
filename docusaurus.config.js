@@ -9,8 +9,8 @@ const BASE_URL = '/docs';
 module.exports = {
   title: 'NiWee Docs',
   tagline: 'On met le LA sur le WEB.',
-  url: 'https://agence.niwee.fr',
-  baseUrl: `${BASE_URL}/`,
+  url: 'https://docs.niwee.fr',
+  baseUrl: `/`,
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
