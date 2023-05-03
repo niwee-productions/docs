@@ -62,12 +62,12 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: 'Site Logo',
-        src: `/logos/ionic-text-docs-dark.svg`,
-        srcDark: `/logos/ionic-text-docs-light.svg`,
+        src: `/logos/logo-light.svg`,
+        srcDark: `/logos/logo-dark.svg`,
         href: '/',
         target: '_self',
-        width: 139,
-        height: 28,
+        width: 200,
+        height: 45,
       },
       items: [
         {
@@ -152,19 +152,9 @@ module.exports = {
           type: 'iconLink',
           position: 'right',
           icon: {
-            alt: 'twitter logo',
-            src: `/logos/twitter.svg`,
-            href: 'https://twitter.com/Ionicframework',
-            target: '_blank',
-          },
-        },
-        {
-          type: 'iconLink',
-          position: 'right',
-          icon: {
             alt: 'github logo',
             src: `/logos/github.svg`,
-            href: 'https://github.com/ionic-team/ionic-framework',
+            href: 'https://github.com/niwee-productions',
             target: '_blank',
           },
         },
@@ -174,7 +164,7 @@ module.exports = {
           icon: {
             alt: 'discord logo',
             src: `/logos/discord.svg`,
-            href: 'https://ionic.link/discord',
+            href: 'https://discord.niwee.fr',
             target: '_blank',
           },
         },
@@ -184,14 +174,13 @@ module.exports = {
       trackingID: 'GTM-TKMGCBC',
     },
     prism: {
-      theme: { plain: {}, styles: [] },
-      // https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js
+      theme: require('prism-react-renderer/themes/dracula'),
       additionalLanguages: ['shell-session', 'http'],
     },
     algolia: {
-      appId: 'O9QSL985BS',
-      apiKey: 'ceb5366064b8fbf70959827cf9f69227',
-      indexName: 'ionicframework',
+      appId: 'M0S7RAWM88',
+      apiKey: 'd8c2b84c9b821c5509e228d4f0e02036',
+      indexName: 'docs',
       contextualSearch: true,
     },
   },
@@ -214,7 +203,7 @@ module.exports = {
         routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js'),
         editUrl: ({ versionDocsDirPath, docPath, locale }) => {
-          return `https://github.com/ionic-team/ionic-docs/edit/main/${versionDocsDirPath}/${docPath}`;
+          return `https://github.com/niwee-productions/docs/edit/main/${versionDocsDirPath}/${docPath}`;
         },
         exclude: ['README.md'],
         lastVersion: 'current',

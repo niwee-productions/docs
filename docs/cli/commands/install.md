@@ -6,20 +6,21 @@ sidebar_label: "install"
 Build web assets and prepare your app for any platform targets
 
 ```shell
-ionic build [options]
+nwi install [options]
 ```
 
-`ionic build` will perform an Ionic build, which compiles web assets and prepares them for deployment.
+`nwi install` will perform an Ionic build, which compiles web assets and prepares them for deployment.
 
 ### Options
 
- - `--prod`: Flag to use the `production` configuration 
+ - `docker`: Installs Docker on Debian based distributions
+ - `composer`: Installs Composer CLI
+ - `node`: Installs Node.js via NVM (Node Version Manager)
+ - `zsh`: Installs ZSH shell 
       
 
 ## Examples
 
 ```shell
-ionic build 
-ionic build --prod
-ionic build --watch
+nwi install docker
 ```

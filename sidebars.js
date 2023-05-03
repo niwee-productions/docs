@@ -22,5 +22,23 @@ module.exports = {
         'cli/commands/webpack',
       ],
     },
+    {
+      type: 'category',
+      label: 'NW Servers',
+      collapsed: false,
+      items: ['nw-servers/introduction', 'nw-servers/connect', 'nw-servers/ssh-keys'],
+    },
+    {
+      type: 'category',
+      label: 'CI/CD',
+      collapsed: false,
+      items: ['ci-cd/introduction', 'ci-cd/runners'],
+    },
+    {
+      type: 'category',
+      label: 'Cloudpanel',
+      collapsed: false,
+      items: ['cloudpanel/introduction'],
+    },
   ],
 };
