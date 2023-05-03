@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build & Deploy
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd ~/htdocs/${{ secrets.URI }}
+          cd ~/htdocs/docs.niwee.fr
           git fetch --all
           git reset --hard origin/main
           git clean -df
