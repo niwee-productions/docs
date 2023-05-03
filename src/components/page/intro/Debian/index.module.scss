@@ -1,0 +1,72 @@
+.appWizard {
+  display        : flex;
+  align-items    : center;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  margin         : 0;
+  float          : none;
+  margin-top     : 25px;
+
+  border-radius: 16px;
+  padding      : 32px;
+
+  max-width: initial;
+
+  margin-inline-start: -32px;
+  margin-inline-end  : -32px;
+
+  background     : #ec5088 url(/icons/debian.png) right center no-repeat;
+  background-size: contain;
+
+  :global {
+    .heading-group {
+      flex-basis: 420px;
+    }
+
+    .heading-group header {
+      font-weight: bold;
+      padding    : 0;
+      margin     : 0;
+      font-size  : 1.5rem;
+      color      : #fff;
+    }
+
+    .heading-group p {
+      color             : #fff;
+      max-width         : 620px;
+      opacity           : 0.8;
+      margin-block-start: 0.5rem;
+      line-height       : 160%;
+    }
+
+    .wizard-button {
+      display      : inline-flex;
+      align-items  : center;
+      border-radius: 8px;
+      padding      : 8px 12px;
+      border       : none;
+      background   : #ec5088;
+
+      transition: all 0.3s ease-out;
+
+      font-size     : 14px;
+      font-weight   : bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space   : nowrap;
+      color         : #fff;
+    }
+
+    .wizard-button:hover,
+    .wizard-button:focus {
+      background     : #ec5088;
+      transition     : all 0.3s;
+      text-decoration: none;
+    }
+
+    .wizard-button ion-icon {
+      font-size  : 16px;
+      margin-left: 4px;
+    }
+  }
+}
