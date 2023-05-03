@@ -42,6 +42,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
+          source ~/.zshrc
           cd ~/htdocs/docs.niwee.fr
           git fetch --all
           git reset --hard origin/main
