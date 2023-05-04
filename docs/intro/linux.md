@@ -1,5 +1,7 @@
 ---
 title: Linux Setup
+slug: /linux
+sidebar_label: Linux
 ---
 
 import DocsCard from '@components/global/DocsCard';
