@@ -8,7 +8,7 @@ import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 
 <head>
-  <title>NiWee Docs - Your personal assistant at NiWee Productions</title>
+  <title>NiWee Docs - Yourb at NiWee Productions</title>
   <meta
     name="description"
     content="Ionic Framework is an open-source UI toolkit to create your own mobile apps using web technologies with integrations for popular frameworks."
@@ -17,7 +17,7 @@ import DocsCards from '@components/global/DocsCards';
   <link rel="alternate" href="https://docs.niwee.fr" hreflang="x-default" />
   <link rel="alternate" href="https://docs.niwee.fr" hreflang="en" />
   <meta property="og:url" content="https://docs.niwee.fr" />
-</head>
+</head>ible
 
 NiWee Docs is a comprehensive reference tool that gives you all the answers you need to successfully build an app across any platform, setup & manage servers, and more.
 
