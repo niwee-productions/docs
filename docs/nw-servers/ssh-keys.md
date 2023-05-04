@@ -8,7 +8,7 @@ sidebar_label: SSH Keys
 SSH keys are used to authenticate users to a NW Server. They are used in place of passwords, which are less secure.
 Password authentication is disabled by default on NW Servers.
 
-:::warning Password Authentication
+:::caution Password Authentication
 Password authentication is DISABLED. It is not possible to log in to a NW Server using a password. You must use an SSH key.
 Enabling password authentication is FORBIDDEN.
 :::
