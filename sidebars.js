@@ -4,7 +4,7 @@ module.exports = {
       type: 'category',
       label: 'Getting Started',
       collapsed: false,
-      items: ['index', 'intro/cli', 'intro/windows-wsl', 'intro/linux', 'intro/macos', 'intro/discord'],
+      items: ['index', 'intro/cli', 'intro/windows-wsl', 'intro/linux', 'intro/macos'],
     },
     {
       type: 'category',
