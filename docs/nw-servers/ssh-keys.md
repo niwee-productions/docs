@@ -1,7 +1,8 @@
 ---
 title: SSH Keys
+slug: /ssh-keys
+sidebar_label: SSH Keys
 ---
-
 # SSH Keys
 
 SSH keys are used to authenticate users to a NW Server. They are used in place of passwords, which are less secure.
@@ -18,9 +19,9 @@ The main SSH Key can only be retrieved by asking the NW Server administrator : N
 
 ### Policy
 
-- THe SSH key is to be used only for the purpose of connecting to the NW Server.
-- The SSH key is to be kept secret.
-- The SSH key needs to be stored in a secure location, in our case : the [1Password](https://niwee.1password.com/) vault.
+* THe SSH key is to be used only for the purpose of connecting to the NW Server.
+* The SSH key is to be kept secret.
+* The SSH key needs to be stored in a secure location, in our case : the [1Password](https://niwee.1password.com/) vault.
 
 ### Downloading the SSH key
 
@@ -32,7 +33,6 @@ You then need to place it in the `~/.ssh` folder of your computer under the name
 ### Linux
 
 ```sh
-# Give the correct permissions to the key & add the key to the SSH agent
 chmod 600 ~/.ssh/id_rsa_nw
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa_nw
