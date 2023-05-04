@@ -4,7 +4,6 @@ sidebar_label: Overview
 slug: /
 hide_table_of_contents: true
 ---
-
 import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 
@@ -34,7 +33,7 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
   href="https://discord.niwee.fr"
   icon="/icons/guide-components-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
->
+
   <p>Dive into Ionic beautifully designed UI component library.</p>
 </DocsCard>
 
@@ -43,7 +42,7 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
   href="/nw-servers/introduction"
   icon="/icons/guide-native-icon.svg"
   hoverIcon="/icons/guide-native-icon-hover.svg"
->
+
   <p>Integrate native device plugins, like Bluetooth, Maps, HealthKit, and more.</p>
 </DocsCard>
 
