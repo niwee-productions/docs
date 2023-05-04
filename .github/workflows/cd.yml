@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build & Deploy
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
 
     steps:
     - uses: actions/checkout@v3
@@ -42,7 +42,8 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd ~/htdocs/${{ secrets.URI }}
+          source ~/.zshrc
+          cd ~/htdocs/docs.niwee.fr
           git fetch --all
           git reset --hard origin/main
           git clean -df
