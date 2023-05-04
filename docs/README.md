@@ -2,7 +2,7 @@
 title: Readme
 slug: /readme
 sidebar_label: Readme
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 # Docs folder
 
