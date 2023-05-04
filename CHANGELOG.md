@@ -4,6 +4,7 @@ CHANGELOG
 [2023-05-04]
 
 [2023-05-03]
+ * 🔨 fix(#typo): Index
  * 💡feat(#decap): Added decap cms
  * Delete Introduction “discord”
  * Update Docs “README”

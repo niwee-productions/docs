@@ -77,6 +77,13 @@ module.exports = {
           position: 'left',
         },
         {
+          href: '/admin',
+          position: 'left',
+          label: 'Admin',
+          'aria-label': 'Decap CMS',
+          target: '_blank',
+        },
+        {
           type: 'cta',
           position: 'left',
           text: 'Contact Us',

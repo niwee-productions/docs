@@ -31,7 +31,7 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
 
 <DocsCard
   header="Join the Discord"
-  href="/components"
+  href="https://discord.niwee.fr"
   icon="/icons/guide-components-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
 >
@@ -40,14 +40,14 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
 
 <DocsCard
   header="NW Servers"
-  href="/native"
+  href="/nw-servers/introduction"
   icon="/icons/guide-native-icon.svg"
   hoverIcon="/icons/guide-native-icon-hover.svg"
 >
   <p>Integrate native device plugins, like Bluetooth, Maps, HealthKit, and more.</p>
 </DocsCard>
 
-  <DocsCard header="CloudPanel" href="/theming/basics" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
+  <DocsCard header="CloudPanel" href="/cloudpanel/introduction" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
     <p>Learn to easily customize and modify your Ionic app's visual design to fit your brand.</p>
   </DocsCard>
 </DocsCards>
