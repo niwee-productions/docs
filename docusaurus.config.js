@@ -185,9 +185,9 @@ module.exports = {
       additionalLanguages: ['shell-session', 'http'],
     },
     algolia: {
-      appId: 'M0S7RAWM88',
-      apiKey: 'd8c2b84c9b821c5509e228d4f0e02036',
-      indexName: 'docs',
+      appId: 'B5LWETZODF',
+      apiKey: 'b1999dc10389f62776f7409ed85b96c0',
+      indexName: 'niwee',
       contextualSearch: true,
     },
   },
