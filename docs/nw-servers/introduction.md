@@ -1,5 +1,7 @@
 ---
 title: About NW Servers
+slug: /introduction
+sidebar_label: Intro
 ---
 
 # About NW Servers
@@ -33,7 +35,7 @@ All of the above instances are and/or will be managed via Docker with [Portainer
 Portainer is available at [portainer.byniwee.cloud](https://portainer.byniwee.cloud)
 :::
 
-:::warning
+:::caution
 Access to the Portainer instance is restricted to the administrators of the NW Servers. If you need access, please contact [Nicolas Boyer](mailto:nicolas@niwee.fr).
 :::
 
