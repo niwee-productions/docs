@@ -1,7 +1,8 @@
 ---
 title: Windows WSL Setup
+slug: /intro/wsl
+sidebar_label: Windows WSL
 ---
-
 ## Enable Virtualization
 
 ### AMD Processor
@@ -14,13 +15,13 @@ The virtualization tech for Intel processors is called "VT-X" and can generally 
 
 ## Install Chocolatey
 
-```bash
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
 ## Install dependencies
 
-```bash
+```powershell
 choco install -y gsudo mkcert vscode git powertoys openssh discord jetbrainsmono
 ```
 
@@ -42,7 +43,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ### Download and install the Kernel
 
-[WSL Kernel from Microsoft](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi 'WSL Kernel from Microsoft')
+[WSL Kernel from Microsoft](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi "WSL Kernel from Microsoft")
 
 ### Verify WSL is on version 2
 
@@ -66,12 +67,12 @@ choco install wsl-ubuntu-2004
 
 ## Configuration
 
-- Launch Ubuntu
-- Setup Username and Password
-- Close Ubuntu
+* Launch Ubuntu
+* Setup Username and Password
+* Close Ubuntu
 
 ## Install the NiWee Package
 
-```bash
+```shell
 sudo apt update && sudo apt upgrade -y && sudo apt install -y curl git && /bin/bash -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
 ```
