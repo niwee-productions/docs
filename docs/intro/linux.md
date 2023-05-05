@@ -1,6 +1,6 @@
 ---
 title: Linux Setup
-slug: /linux
+slug: /intro/linux
 sidebar_label: Linux
 ---
 
