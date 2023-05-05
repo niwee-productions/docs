@@ -1,25 +1,18 @@
 ---
-title: "nwi help"
-sidebar_label: "help"
+title: nwi help
+slug: /commands/help
+sidebar_label: help
 ---
-
 Build web assets and prepare your app for any platform targets
 
 ```shell
-ionic build [options]
+nwi help [options]
 ```
 
-`ionic build` will perform an Ionic build, which compiles web assets and prepares them for deployment.
-
-### Options
-
- - `--prod`: Flag to use the `production` configuration 
-      
+`ionic build` will show you all of the available commands in the cli.
 
 ## Examples
 
 ```shell
-ionic build 
-ionic build --prod
-ionic build --watch
+nwi help
 ```
