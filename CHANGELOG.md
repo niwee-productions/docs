@@ -2,6 +2,7 @@ CHANGELOG
 ----------------------
 
 [2023-05-05]
+ * 💡feat(#translator): Added autotranslator
 
 [2023-05-04]
  * Update CLI Commands “help”

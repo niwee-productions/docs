@@ -3,7 +3,7 @@ titre : "nwi go"
 sidebar_label : "go"
 ---
 
-Créez des actifs web et préparez votre application pour toutes les plateformes cibles
+Créez des actifs web et préparez votre application pour les cibles de n'importe quelle plateforme
 
 ```shell
 ionic build [options]

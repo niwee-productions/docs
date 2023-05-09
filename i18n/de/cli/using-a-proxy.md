@@ -1,24 +1,24 @@
-# Using a Proxy
+# Verwendung eines Proxys
 
-Proxy support is built-in to the Ionic CLI. Proxy settings can be configured via the config file or an environment variable.
+Die Proxy-Unterstützung ist in die Ionic-CLI integriert. Die Proxy-Einstellungen können über die Konfigurationsdatei oder eine Umgebungsvariable konfiguriert werden.
 
-To configure proxy settings via the config file, run the following with the URL of the proxy server:
+Um die Proxy-Einstellungen über die Konfigurationsdatei zu konfigurieren, führen Sie den folgenden Befehl mit der URL des Proxy-Servers aus:
 
 ```shell
 ionic config set -g proxy http://proxy.example.com:8888
 ```
 
-To configure proxy settings via an environment variable, use one of the following:
+Um die Proxy-Einstellungen über eine Umgebungsvariable zu konfigurieren, verwenden Sie eine der folgenden Möglichkeiten:
 
 ```shell
-$ export HTTP_PROXY="http://proxy.example.com:8888" # also used by npm
-$ export HTTPS_PROXY="https://proxy.example.com:8888" # also used by npm
+$ export HTTP_PROXY="http://proxy.example.com:8888" # wird auch von npm verwendet
+$ export HTTPS_PROXY="https://proxy.example.com:8888" # wird auch von npm verwendet
 $ export IONIC_HTTP_PROXY="http://proxy.example.com:8888"
 ```
 
-### Other CLIs
+### Andere CLIs
 
-Each CLI that you use must be configured separately to proxy network requests.
+Jede CLI, die Sie verwenden, muss separat für den Proxy von Netzwerkanfragen konfiguriert werden.
 
 #### npm
 
@@ -32,14 +32,14 @@ npm config set proxy http://proxy.company.com:8888
 git config --global http.proxy http://proxy.example.com:8888
 ```
 
-### SSL Configuration
+### SSL-Konfiguration
 
-The Ionic CLI can be configured to use various SSL settings for HTTP requests.
+Die Ionic CLI kann so konfiguriert werden, dass verschiedene SSL-Einstellungen für HTTP-Anfragen verwendet werden.
 
 ```shell
-$ ionic config set -g ssl.cafile /path/to/cafile # file path to your CA root certificate
-$ ionic config set -g ssl.certfile /path/to/certfile # file path to a client certificate
-$ ionic config set -g ssl.keyfile /path/to/keyfile # file path to a client key file
+$ ionic config set -g ssl.cafile /path/to/cafile # Dateipfad zu Ihrem CA-Root-Zertifikat
+$ ionic config set -g ssl.certfile /path/to/certfile # Dateipfad zu einem Client-Zertifikat
+$ ionic config set -g ssl.keyfile /path/to/keyfile # Dateipfad zu einer Client-Schlüsseldatei
 ```
 
-The `cafile`, `certfile`, and `keyfile` entries can be manually edited as arrays of strings in `~/.ionic/config.json` to include multiple files.
+Die Einträge `cafile`, `certfile` und `keyfile` können manuell als Arrays von Strings in `~/.ionic/config.json` bearbeitet werden, um mehrere Dateien einzuschließen.

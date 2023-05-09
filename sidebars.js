@@ -40,5 +40,11 @@ module.exports = {
       collapsed: false,
       items: ['cloudpanel/introduction'],
     },
+    {
+      type: 'category',
+      label: 'Wordpress',
+      collapsed: false,
+      items: ['wordpress/introduction'],
+    },
   ],
 };

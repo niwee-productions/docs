@@ -1,32 +1,32 @@
 ---
-title: Introduction to NiWee Docs
-sidebar_label: Overview
+Titel: Einführung in NiWee Docs
+sidebar_label: Übersicht
 slug: /
 hide_table_of_contents: true
 ---
 
-import DocsCard from '@components/global/DocsCard';
-import DocsCards from '@components/global/DocsCards';
+importiere DocsCard von '@components/global/DocsCard';
+importiere DocsCards von '@components/global/DocsCards';
 
 <head>
-  <title>NiWee Docs - Your personal assistant at NiWee Productions</title>
+  <title>NiWee Docs - Ihr persönlicher Assistent bei NiWee Productions</title>
   <meta
     name="description"
-    content="Ionic Framework is an open-source UI toolkit to create your own mobile apps using web technologies with integrations for popular frameworks."
+    content="Ionic Framework ist ein Open-Source UI-Toolkit zur Erstellung eigener mobiler Apps unter Verwendung von Webtechnologien mit Integrationen für beliebte Frameworks."
   />
   <link rel="canonical" href="https://docs.niwee.fr" />
   <link rel="alternate" href="https://docs.niwee.fr" hreflang="x-default" />
-  <link rel="alternate" href="https://docs.niwee.fr" hreflang="en" />
+  <link rel="alternate" href="https://docs.niwee.fr" hreflang="de" />
   <meta property="og:url" content="https://docs.niwee.fr" />
 </head>
 
-NiWee Docs is a comprehensive reference tool that gives you all the answers you need to successfully build an app across any platform, setup & manage servers, and more.
+NiWee Docs ist ein umfassendes Nachschlagewerk, das Ihnen alle Antworten gibt, die Sie benötigen, um erfolgreich eine App für jede Plattform zu entwickeln, Server einzurichten und zu verwalten und vieles mehr.
 
 <intro-end />
 
 <DocsCards>
-  <DocsCard header="The NiWee CLI" href="/intro/cli" icon="/icons/guide-installation-icon.svg" hoverIcon="/icons/guide-installation-icon-hover.svg">
-    <p>Step-by-step guides to setting up your system and installing the framework.</p>
+  <DocsCard header="Die NiWee CLI" href="/intro/cli" icon="/icons/guide-installation-icon.svg" hoverIcon="/icons/guide-installation-icon-hover.svg">
+    <p>Schrittweise Anleitungen zum Einrichten Ihres Systems und zur Installation des Frameworks.</p>
   </DocsCard>
 
 <DocsCard
@@ -35,7 +35,7 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
   icon="/icons/guide-components-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
 >
-  <p>Dive into Ionic beautifully designed UI component library.</p>
+  <p>Tauchen Sie ein in die wunderschön gestaltete Ionic UI-Komponenten-Bibliothek.</p>
 </DocsCard>
 
 <DocsCard
@@ -44,10 +44,10 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
   icon="/icons/guide-native-icon.svg"
   hoverIcon="/icons/guide-native-icon-hover.svg"
 >
-  <p>Integrate native device plugins, like Bluetooth, Maps, HealthKit, and more.</p>
+  <p>Integrieren Sie native Geräte-Plugins, wie Bluetooth, Maps, HealthKit und mehr.</p>
 </DocsCard>
 
   <DocsCard header="CloudPanel" href="/cloudpanel/introduction" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
-    <p>Learn to easily customize and modify your Ionic app's visual design to fit your brand.</p>
+    <p>Lernen Sie, wie Sie das visuelle Design Ihrer Ionic-App leicht anpassen und verändern können, um es an Ihre Marke anzupassen.</p>
   </DocsCard>
 </DocsCards>

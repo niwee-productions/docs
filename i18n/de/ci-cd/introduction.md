@@ -1,9 +1,9 @@
 ---
-title: Introduction
+Titel: Einführung
 ---
 
-# Basics of CI/CD
+# Grundlagen von CI/CD
 
-## Introduction
+## Einführung
 
-Continuous Integration (CI) and Continuous Delivery (CD) are two practices that are often used together to improve the speed and quality of software delivery. CI/CD is a software development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. By doing so, you can significantly reduce the cost, time, and risk of fixing bugs in the future.
+Continuous Integration (CI) und Continuous Delivery (CD) sind zwei Praktiken, die häufig zusammen eingesetzt werden, um die Geschwindigkeit und Qualität der Softwarebereitstellung zu verbessern. Bei CI/CD handelt es sich um eine Praxis der Softwareentwicklung, bei der Entwickler mehrmals täglich Code in ein gemeinsames Repository integrieren müssen. Jeder Check-in wird dann durch einen automatisierten Build überprüft, so dass die Teams Probleme frühzeitig erkennen können. Auf diese Weise können Sie die Kosten, den Zeitaufwand und das Risiko für die Behebung von Fehlern in der Zukunft erheblich reduzieren.

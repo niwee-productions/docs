@@ -1,19 +1,19 @@
 ---
-title: Runners
+Titel: Läufer
 ---
 
-## Introduction
+## Einführung
 
-CI/CD Runners connect to the Versionning tool and execute the CI/CD pipelines. They are responsible for executing the CI/CD pipelines and reporting the results back to the Versionning tool.
+CI/CD-Runner verbinden sich mit dem Versionning-Tool und führen die CI/CD-Pipelines aus. Sie sind für die Ausführung der CI/CD-Pipelines und die Rückmeldung der Ergebnisse an das Versionning-Tool verantwortlich.
 
-## Runners
+## Läufer
 
-We use custom runners for our CI/CD pipelines. They are based on the GitLab Runner and are deployed on our Mainframe. They are responsible for executing the CI/CD pipelines and reporting the results back to the Versionning tool.
+Wir verwenden benutzerdefinierte Runner für unsere CI/CD-Pipelines. Sie basieren auf dem GitLab-Runner und werden auf unserem Mainframe eingesetzt. Sie sind für die Ausführung der CI/CD-Pipelines und die Rückmeldung der Ergebnisse an das Versionierungstool verantwortlich.
 
-## Runners configuration
+## Konfiguration der Runner
 
-::: details Gitlab Runner
-The GitLab Runner is a software application that is used to run your jobs and send the results back to GitLab. It is used in conjunction with GitLab CI, the open-source continuous integration service included with GitLab that coordinates the jobs.
+::: Details Gitlab Runner
+Der GitLab Runner ist eine Softwareanwendung, die dazu dient, Ihre Aufträge auszuführen und die Ergebnisse an GitLab zurückzusenden. Er wird in Verbindung mit GitLab CI verwendet, dem in GitLab enthaltenen Open-Source-Dienst für kontinuierliche Integration, der die Aufträge koordiniert.
 
 ### Installation
 
@@ -29,15 +29,15 @@ sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/
 sudo gitlab-runner start
 ```
 
-### Registration
+### Registrierung
 
-The token can be found in the Gitlab repo\'s CI settings or in the parent group to include all repos
+Das Token befindet sich in den CI-Einstellungen des Gitlab-Repos oder in der übergeordneten Gruppe, die alle Repos umfasst
 
 ```sh
 sudo gitlab-runner register
 ```
 
-### Configuration
+### Konfiguration
 
 ```sh
 sudo nano /etc/gitlab-runner/config.toml
@@ -45,7 +45,7 @@ sudo nano /etc/gitlab-runner/config.toml
 
 ```toml
 concurrent = 1
-check_interval = 0
+prüf_intervall = 0
 
 [session_server]
   session_timeout = 1800
@@ -53,7 +53,7 @@ check_interval = 0
 [[runners]]
   name = "nw1.byniwee.cloud"
   url = "https://gitlab.com/"
-  token = "<your-token>"
+  token = "<Ihr Token>"
   executor = "docker"
   [runners.custom_build_dir]
   [runners.cache]
@@ -66,11 +66,11 @@ check_interval = 0
     dns = ["8.8.8.8"]
     volumes = ["/var/run/docker.sock:/var/run/docker.sock", "/cache"]
     pull_policy = "if-not-present"
-    tls_verify = false
+    tls_verify = falsch
     image = "debian:latest"
-    privileged = true
-    disable_entrypoint_overwrite = false
-    oom_kill_disable = false
-    disable_cache = false
+    privilegiert = true
+    disable_entrypoint_overwrite = falsch
+    oom_kill_disable = falsch
+    disable_cache = falsch
     shm_size = 0
 ```

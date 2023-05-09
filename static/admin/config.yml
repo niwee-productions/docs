@@ -118,3 +118,19 @@ collections:
     - { name: slug, label: Slug, widget: string }
     - { name: sidebar_label, label: Sidebar Label, widget: string }
     - { name: hide_table_of_contents, label: Hide Table of Contents, widget: boolean, default: false, required: false }
+
+- name: wordpress
+  label: "Wordpress"
+  folder: docs/wordpress
+  identifier_field: title
+  extension: md
+  format: frontmatter
+  widget: "list"
+  create: true
+  slug: "{{slug}}"
+  fields:
+    - { name: title, label: Title, widget: string }
+    - { name: body, label: Body, widget: markdown }
+    - { name: slug, label: Slug, widget: string }
+    - { name: sidebar_label, label: Sidebar Label, widget: string }
+    - { name: hide_table_of_contents, label: Hide Table of Contents, widget: boolean, default: false, required: false }

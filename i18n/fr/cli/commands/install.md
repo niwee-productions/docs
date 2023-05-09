@@ -1,25 +1,25 @@
 ---
-title: "nwi install"
-sidebar_label: "install"
+titre : "nwi install"
+sidebar_label : "install"
 ---
 
-Build web assets and prepare your app for any platform targets
+Créez des ressources web et préparez votre application pour toutes les plateformes cibles
 
 ```shell
 nwi install [options]
 ```
 
-`nwi install` will perform an Ionic build, which compiles web assets and prepares them for deployment.
+`nwi install` va effectuer une compilation Ionic, qui compile les ressources web et les prépare pour le déploiement.
 
 ### Options
 
- - `docker`: Installs Docker on Debian based distributions
- - `composer`: Installs Composer CLI
- - `node`: Installs Node.js via NVM (Node Version Manager)
- - `zsh`: Installs ZSH shell 
+ - `docker` : Installe Docker sur les distributions basées sur Debian
+ - `composer` : Installe le CLI de Composer
+ - `node` : Installe Node.js via NVM (Node Version Manager)
+ - `zsh` : Installe l'interpréteur de commandes ZSH
       
 
-## Examples
+## Exemples
 
 ```shell
 nwi install docker

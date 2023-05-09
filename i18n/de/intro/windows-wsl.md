@@ -1,77 +1,77 @@
 ---
-title: Windows WSL Setup
-slug: /intro/wsl
+Titel: Windows WSL-Einrichtung
+Slug: /intro/wsl
 sidebar_label: Windows WSL
 ---
-## Enable Virtualization
+## Virtualisierung einschalten
 
-### AMD Processor
+### AMD-Prozessor
 
-The virtualization tech for AMD processors is called "SVM" and can generally be found in the "Advanced" tab under "CPU configuration".
+Die Virtualisierungstechnik für AMD-Prozessoren heißt "SVM" und ist in der Regel auf der Registerkarte "Erweitert" unter "CPU-Konfiguration" zu finden.
 
-### Intel Processor
+### Intel-Prozessor
 
-The virtualization tech for Intel processors is called "VT-X" and can generally be found in the "Advanced" tab under "CPU configuration".
+Die Virtualisierungstechnologie für Intel-Prozessoren heißt "VT-X" und ist im Allgemeinen auf der Registerkarte "Erweitert" unter "CPU-Konfiguration" zu finden.
 
-## Install Chocolatey
+## Chocolatey installieren
 
-```powershell
+```Powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-## Install dependencies
+## Abhängigkeiten installieren
 
-```powershell
+````Powershell
 choco install -y gsudo mkcert vscode git powertoys openssh discord jetbrainsmono
 ```
 
-## Install WSL2
+## WSL2 installieren
 
-Open PowerShell as Administrator:
+Öffnen Sie PowerShell als Administrator:
 
-### Enable WSL
+### WSL aktivieren
 
-```powershell
+``Powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-### Enable Hyper V
+### Hyper V aktivieren
 
-```powershell
+```Powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-### Download and install the Kernel
+### Herunterladen und Installieren des Kernels
 
-[WSL Kernel from Microsoft](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi "WSL Kernel from Microsoft")
+[WSL-Kernel von Microsoft](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi "WSL-Kernel von Microsoft")
 
-### Verify WSL is on version 2
+### Überprüfen Sie, ob WSL auf Version 2 ist.
 
-```powershell
+```Powershell
 wsl --set-default-version 2
 ```
 
-### Install Ubuntu
+### Ubuntu installieren
 
-#### On Windows 11
+#### unter Windows 11
 
-```powershell
+```Powershell
 wsl --install -d Ubuntu
 ```
 
-#### On Windows 10
+#### unter Windows 10
 
-```powershell
+```Powershell
 choco install wsl-ubuntu-2004
 ```
 
-## Configuration
+## Konfiguration
 
-* Launch Ubuntu
-* Setup Username and Password
-* Close Ubuntu
+* Ubuntu starten
+* Benutzername und Passwort einrichten
+* Ubuntu schließen
 
-## Install the NiWee Package
+## Installieren Sie das NiWee-Paket
 
 ```shell
 sudo apt update && sudo apt upgrade -y && sudo apt install -y curl git && /bin/bash -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"

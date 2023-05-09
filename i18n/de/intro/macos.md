@@ -1,27 +1,27 @@
 ---
-title: MacOS Setup
+Titel: MacOS-Einrichtung
 ---
 
-## Install Docker Desktop
+## Docker Desktop installieren
 
-[Download Docker CE from Docker Hub](https://docs.byniwee.cloud/docs/getting-started/setup-workstation/macos#install-docker-desktop)
+[Docker CE vom Docker Hub herunterladen](https://docs.byniwee.cloud/docs/getting-started/setup-workstation/macos#install-docker-desktop)
 
-1. Launch Docker Desktop
-2. Skip the tutorial
-3. Go into settings
-4. Under Kubernetes, check the box Enable Kubernetes
+1. Starten Sie Docker Desktop
+2. Überspringen Sie das Lernprogramm
+3. Gehen Sie zu den Einstellungen
+4. Aktivieren Sie unter Kubernetes das Kästchen Kubernetes aktivieren
 
-## Install the NiWee Package (if you have access)[​](https://docs.byniwee.cloud/docs/getting-started/setup-workstation/macos#install-the-niwee-package-if-you-have-access)
+## Installieren Sie das NiWee-Paket (wenn Sie Zugang haben)[](https://docs.byniwee.cloud/docs/getting-started/setup-workstation/macos#install-the-niwee-package-if-you-have-access)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
 ```
 
-## Install VScode
+## VScode installieren
 
-[Download Visual Studio Code from Microsoft](https://code.visualstudio.com/download)
+[Visual Studio Code von Microsoft herunterladen](https://code.visualstudio.com/download)
 
-- Open it
-- `Command + Shift + p` to open the command palette
-- Search for `path`
-- Use Install \'code\' command in PATH
+- Öffnen Sie es
+- Befehl + Umschalt + p", um die Befehlspalette zu öffnen
+- Suchen Sie nach "Pfad".
+- Installieren Sie den Befehl "code" in PATH

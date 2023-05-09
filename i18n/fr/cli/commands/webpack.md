@@ -3,7 +3,7 @@ titre : "nwi webpack"
 sidebar_label : "webpack"
 ---
 
-Construisez des actifs web et préparez votre application pour toutes les plateformes cibles
+Construisez des actifs web et préparez votre application pour les cibles de n'importe quelle plateforme
 
 ```shell
 ionic build [options]

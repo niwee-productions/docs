@@ -1,7 +1,7 @@
 ---
-title: Introduction
+Titel: Einführung
 ---
 
-## The Cloudpanel Project
+## Das Cloudpanel-Projekt
 
-Cloudpanel is a web-based control panel for managing cloud servers (AWS, GCP, Azure, DigitalOcean, Linode, Hetzner, UpCloud, Vultr, etc.) and hosting websites and applications on them. It is a free and open-source alternative to Plesk and cPanel.
+Cloudpanel ist ein webbasiertes Kontrollpanel zur Verwaltung von Cloud-Servern (AWS, GCP, Azure, DigitalOcean, Linode, Hetzner, UpCloud, Vultr usw.) und zum Hosten von Websites und Anwendungen auf diesen Servern. Es ist eine kostenlose und Open-Source-Alternative zu Plesk und cPanel.

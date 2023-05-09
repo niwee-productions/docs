@@ -1,23 +1,23 @@
 ---
-title: Readme
+Titel: Liesmich
 slug: /readme
-sidebar_label: Readme
+sidebar_label: Liesmich
 hide_table_of_contents: false
 ---
-# Docs folder
+# Ordner Docs
 
-The `/docs` folder houses all markdown files. The page structure loosely maps to the routing on the site since paths can be changed in the frontmatter.
+Der Ordner `/docs` enthält alle Markdown-Dateien. Die Seitenstruktur entspricht in etwa dem Routing auf der Website, da die Pfade im Frontmatter geändert werden können.
 
-## Versioning
+## Versionierung
 
-This folder can also contain components, assets, and whatever else is meant to be versioned when the docusaurus versioning script is run. For example, if there is a page component that is only relevant to the `layout` section in the current version of Ionic, it could be added to a `_components/` folder in `docs/layout/`. When the versioning script is run, the component will be copied to `versioned_docs/verion-{X}/layout/_components/` and there will now be a separate component in `docs/layout/_components/` that can be deleted or updated to the latest version. The same concept applies to images and other files.
+Dieser Ordner kann auch Komponenten, Assets und alles andere enthalten, das versioniert werden soll, wenn das docusaurus versioning script ausgeführt wird. Wenn es zum Beispiel eine Seitenkomponente gibt, die in der aktuellen Version von Ionic nur für den Abschnitt "Layout" relevant ist, könnte sie zu einem Ordner "Komponenten/" in "docs/layout/" hinzugefügt werden. Wenn das Versionierungsskript ausgeführt wird, wird die Komponente nach `versioned_docs/verion-{X}/layout/_components/` kopiert und es gibt nun eine separate Komponente in `docs/layout/_components/`, die gelöscht oder auf die neueste Version aktualisiert werden kann. Das gleiche Konzept gilt für Bilder und andere Dateien.
 
-If components are meant to be shared across versions, they can be put in `src/components/`. If images and other served files are meant to be shared across versions they can be put in `static/`.
+Wenn Komponenten über Versionen hinweg gemeinsam genutzt werden sollen, können sie in `src/components/` abgelegt werden. Wenn Bilder und andere Dateien über Versionen hinweg gemeinsam genutzt werden sollen, können sie in `static/` abgelegt werden.
 
-## Auto Generated Files
+## Automatisch generierte Dateien
 
-All markdown files in these directories are generated from [scripts](/scripts):
+Alle Markdown-Dateien in diesen Verzeichnissen werden von [scripts](/scripts) generiert:
 
 - `docs/api/`
-- `docs/cli/commands/`
+- `docs/cli/befehle/`
 - `docs/native/`

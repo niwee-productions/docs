@@ -18,7 +18,7 @@ $ export IONIC_HTTP_PROXY="http://proxy.example.com:8888"
 
 ### Otras CLIs
 
-Cada CLI que utilices debe ser configurada por separado para proxyar peticiones de red.
+Cada CLI que utilices debe configurarse por separado para proxyar las peticiones de red.
 
 #### npm
 
@@ -38,7 +38,7 @@ El CLI de Ionic puede ser configurado para usar varios ajustes SSL para peticion
 
 ```shell
 $ ionic config set -g ssl.cafile /path/to/cafile # ruta a tu certificado raíz CA
-$ ionic config set -g ssl.certfile /path/to/certfile # ruta al certificado de cliente
+$ ionic config set -g ssl.certfile /path/to/certfile # ruta al certificado del cliente
 $ ionic config set -g ssl.keyfile /path/to/keyfile # ruta a un archivo de claves de cliente
 ```
 

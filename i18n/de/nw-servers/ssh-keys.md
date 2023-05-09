@@ -1,34 +1,34 @@
 ---
-title: SSH Keys
-slug: /ssh-keys
-sidebar_label: SSH Keys
+Titel: SSH-Schlüssel
+slug: /ssh-schluessel
+sidebar_label: SSH-Schlüssel
 ---
-# SSH Keys
+# SSH-Schlüssel
 
-SSH keys are used to authenticate users to a NW Server. They are used in place of passwords, which are less secure.
-Password authentication is disabled by default on NW Servers.
+SSH-Schlüssel werden verwendet, um Benutzer bei einem NW Server zu authentifizieren. Sie werden anstelle von Passwörtern verwendet, die weniger sicher sind.
+Die Passwortauthentifizierung ist auf NW-Servern standardmäßig deaktiviert.
 
-:::caution Password Authentication
-Password authentication is DISABLED. It is not possible to log in to a NW Server using a password. You must use an SSH key.
-Enabling password authentication is FORBIDDEN.
+:::caution Kennwort-Authentifizierung
+Die Kennwortauthentifizierung ist DEAKTIVIERT. Es ist nicht möglich, sich mit einem Kennwort bei einem NW Server anzumelden. Sie müssen einen SSH-Schlüssel verwenden.
+Das Aktivieren der Passwort-Authentifizierung ist VERBOTEN.
 :::
 
-## Retrieving the main SSH key
+## Abrufen des SSH-Hauptschlüssels
 
-The main SSH Key can only be retrieved by asking the NW Server administrator : Nicolas Boyer.
+Der Haupt-SSH-Schlüssel kann nur vom NW-Server-Administrator : Nicolas Boyer abgefragt werden.
 
-### Policy
+### Richtlinie
 
-* THe SSH key is to be used only for the purpose of connecting to the NW Server.
-* The SSH key is to be kept secret.
-* The SSH key needs to be stored in a secure location, in our case : the [1Password](https://niwee.1password.com/) vault.
+* Der SSH-Schlüssel darf nur für die Verbindung zum NW Server verwendet werden.
+* Der SSH-Schlüssel muss geheim gehalten werden.
+* Der SSH-Schlüssel muss an einem sicheren Ort aufbewahrt werden, in unserem Fall im [1Password](https://niwee.1password.com/) Tresor.
 
-### Downloading the SSH key
+### Herunterladen des SSH-Schlüssels
 
-Once your have access to the key in the 1Password vault, you can download it by clicking on the "Download" button.
-You then need to place it in the `~/.ssh` folder of your computer under the name `id_rsa_nw`.
+Sobald Sie Zugriff auf den Schlüssel im 1Password-Tresor haben, können Sie ihn herunterladen, indem Sie auf die Schaltfläche "Herunterladen" klicken.
+Sie müssen ihn dann im Ordner `~/.ssh` auf Ihrem Computer unter dem Namen `id_rsa_nw` ablegen.
 
-## Adding the SSH key to your SSH agent
+## Hinzufügen des SSH-Schlüssels zu Ihrem SSH-Agenten
 
 ### Linux
 
@@ -40,11 +40,11 @@ ssh-add ~/.ssh/id_rsa_nw
 
 ### Windows
 
-```powershell
+```Powershell
 ssh-add ~/.ssh/id_rsa_nw
 ```
 
-## Generate Public Key
+## Öffentlichen Schlüssel generieren
 
 ```sh
 ssh-keygen -y -f ~/.ssh/id_rsa_nw > ~/.ssh/id_rsa_nw.pub

@@ -1,111 +1,111 @@
 ---
-title: Configuration
+Titel: Konfiguration
 ---
 
 <head>
-  <title>Capacitor Configuration | Maintain a Global Configuration File</title>
+  <title>Kondensator-Konfiguration | Pflege einer globalen Konfigurationsdatei</title>
   <meta
     name="description"
-    content="Set and print configuration values from project config files and the global CLI config file with Ionic CLI. Read to learn more about Capacitor configuration."
+    content="Setzen und Drucken von Konfigurationswerten aus Projektkonfigurationsdateien und der globalen CLI-Konfigurationsdatei mit Ionic CLI. Lesen Sie, um mehr über die Capacitor-Konfiguration zu erfahren."
   />
 </head>
 
-## Files
+## Dateien
 
-Configuration values are stored in JSON files. The Ionic CLI maintains a global configuration file, usually located at `~/.ionic/config.json`, and project configuration files, usually at the project's root directory as `ionic.config.json`.
+Konfigurationswerte werden in JSON-Dateien gespeichert. Das Ionic CLI verwaltet eine globale Konfigurationsdatei, die sich normalerweise unter `~/.ionic/config.json` befindet, und Projektkonfigurationsdateien, die sich normalerweise im Stammverzeichnis des Projekts als `ionic.config.json` befinden.
 
-The CLI provides commands for setting and printing config values from project config files and the global CLI config file. See `ionic config --help` or see the documentation for usage of [`ionic config get`](commands/config-get.md) and [`ionic config set`](commands/config-set.md).
+Die CLI bietet Befehle zum Setzen und Drucken von Konfigurationswerten aus Projektkonfigurationsdateien und der globalen CLI-Konfigurationsdatei. Siehe `ionic config --help` oder lesen Sie die Dokumentation zur Verwendung von [`ionic config get`](commands/config-get.md) und [`ionic config set`](commands/config-set.md).
 
-### Project Configuration File
+### Projekt-Konfigurationsdatei
 
-Each Ionic project has a project configuration file, usually at the project's root directory. The following is an annotated `ionic.config.json` file.
+Jedes Ionic-Projekt hat eine Projektkonfigurationsdatei, normalerweise im Stammverzeichnis des Projekts. Das Folgende ist eine kommentierte `ionic.config.json` Datei.
 
-```json
+``json
 {
-  // The human-readable name of the app.
-  "name": "My App",
+  // Der von Menschen lesbare Name der Anwendung.
+  "name": "Meine App",
 
-  // The project type of the app. The CLI uses this value to determine which
-  // commands and command options are available, what to output for help
-  // documentation, and what to use for web asset builds and the dev server.
+  // Der Projekttyp der App. Die CLI verwendet diesen Wert, um zu bestimmen, welche
+  // Befehle und Befehlsoptionen verfügbar sind, was für die Hilfe ausgegeben
+  // Dokumentation auszugeben ist und was für Web-Asset-Builds und den Dev-Server zu verwenden ist.
   "type": "angular",
 
-  // The App ID for Appflow.
+  // Die App-ID für Appflow.
   "id": "abc123",
 
-  // Configuration object for integrations such as Cordova and Capacitor.
+  // Konfigurationsobjekt für Integrationen wie Cordova und Capacitor.
   "integrations": {
     "cordova": {
       ...
     }
   },
 
-  // Hook configuration--see the Hooks section below for details.
+  // Hook-Konfiguration - siehe den Abschnitt "Hooks" weiter unten für Details.
   "hooks": {
     ...
   }
 }
 ```
 
-## Environment Variables
+## Umgebungsvariablen
 
-The CLI will look for the following environment variables:
+Die CLI sucht nach den folgenden Umgebungsvariablen:
 
-- `IONIC_CONFIG_DIRECTORY`: The directory of the global CLI config. Defaults to `~/.ionic`.
-- `IONIC_HTTP_PROXY`: Set a URL for proxying all CLI requests through. See [Using a Proxy](using-a-proxy.md).
-- `IONIC_TOKEN`: Automatically authenticates with [Appflow](https://ionic.io/appflow).
+- `IONIC_CONFIG_DIRECTORY`: Das Verzeichnis der globalen CLI-Konfiguration. Die Voreinstellung ist `~/.ionic`.
+- `IONIC_HTTP_PROXY`: Legt eine URL fest, über die alle CLI-Anfragen geleitet werden. Siehe [Using a Proxy](using-a-proxy.md).
+- `IONIC_TOKEN`: Authentifiziert sich automatisch mit [Appflow](https://ionic.io/appflow).
 
-## Flags
+## Flaggen
 
-CLI flags are global options that alter the behavior of a CLI command.
+CLI-Flags sind globale Optionen, die das Verhalten eines CLI-Befehls ändern.
 
-- `--help`: Instead of running the command, view its help page.
-- `--verbose`: Show all log messages for debugging purposes.
-- `--quiet`: Only show `WARN` and `ERROR` log messages.
-- `--no-interactive`: Turn off interactive prompts and fancy outputs. If CI or a non-TTY terminal is detected, the CLI is automatically non-interactive.
-- `--confirm`: Turn on auto-confirmation of confirmation prompts. Careful: the CLI prompts before doing something potentially harmful. Auto-confirming may have unintended results.
+- `--help`: Anstatt den Befehl auszuführen, wird dessen Hilfeseite angezeigt.
+- `--verbose`: Zeigt alle Protokollmeldungen zu Debugging-Zwecken an.
+- `--quiet`: Zeigt nur `WARN` und `ERROR` Protokollmeldungen an.
+- `--kein-interaktiv`: Schaltet interaktive Eingabeaufforderungen und ausgefallene Ausgaben aus. Wenn CI oder ein Nicht-TTY-Terminal erkannt wird, ist die CLI automatisch nicht interaktiv.
+- `--Bestätigung`: Schaltet die automatische Bestätigung von Bestätigungsaufforderungen ein. Vorsicht: Die CLI fragt nach, bevor Sie etwas potentiell Schädliches tun. Automatische Bestätigungen können unbeabsichtigte Folgen haben.
 
-## Hooks
+## Haken
 
-The CLI can run scripts during certain events, such as before and after builds. To hook into the CLI, the following [npm scripts](https://docs.npmjs.com/misc/scripts) can be used in `package.json`:
+Das CLI kann Skripte während bestimmter Ereignisse ausführen, wie z.B. vor und nach Builds. Um sich in das CLI einzuklinken, können die folgenden [npm-Skripte](https://docs.npmjs.com/misc/scripts) in `package.json` verwendet werden:
 
-- `ionic:serve:before`: executed before the dev server starts
-- `ionic:serve:after`: executed after the dev server is terminated
-- `ionic:build:before`: executed before a web asset build begins
-- `ionic:build:after`: executed after a web asset build finishes
-- `ionic:capacitor:run:before`: executed during `ionic capacitor run` before capacitor open is executed
-- `ionic:capacitor:build:before`: executed during `ionic capacitor build` before capacitor open is executed
-- `ionic:capacitor:sync:after`: executed during `ionic capacitor sync` after a sync
+- `ionic:serve:before`: wird ausgeführt, bevor der Dev-Server startet
+- `ionic:serve:after`: wird ausgeführt, nachdem der Dev-Server beendet wurde
+- `ionic:build:before`: wird ausgeführt, bevor die Erstellung eines Web-Assets beginnt
+- `ionic:build:after`: wird nach Beendigung eines Web-Asset-Builds ausgeführt
+- `ionic:capacitor:run:before`: wird während `ionic capacitor run` ausgeführt, bevor capacitor open ausgeführt wird
+- `ionic:capacitor:build:before`: wird während des `ionic capacitor build` ausgeführt, bevor capacitor open ausgeführt wird
+- ionic:capacitor:sync:after`: ausgeführt während `ionic capacitor sync` nach einer Synchronisation
 
-When using a shell script for any of the hooks, hook context is defined in environment variables prefixed with `IONIC_CLI_HOOK_CTX_`.
+Wenn Sie ein Shell-Skript für einen der Hooks verwenden, wird der Hook-Kontext in Umgebungsvariablen mit dem Präfix `IONIC_CLI_HOOK_CTX_` definiert.
 
-The following example shows the environment variables that are set for the `ionic:capacitor:build` hook.
+Das folgende Beispiel zeigt die Umgebungsvariablen, die für den `ionic:capacitor:build`-Hook gesetzt werden.
 
-```shell
-IONIC_CLI_HOOK_CTX_NAME=capacitor:build:before
+`Shell
+IONIC_CLI_HOOK_CTX_NAME=Kondensator:build:vorher
 IONIC_CLI_HOOK_CTX_BUILD_CORDOVA_ASSETS=true
-IONIC_CLI_HOOK_CTX_BUILD_ENGINE=browser
-IONIC_CLI_HOOK_CTX_BUILD_PROJECT=app
+IONIC_CLI_HOOK_CTX_BUILD_ENGINE=Browser
+IONIC_CLI_HOOK_CTX_BUILD_PROJECT=Anwendung
 IONIC_CLI_HOOK_CTX_BUILD_TYPE=angular
 IONIC_CLI_HOOK_CTX_BUILD_VERBOSE=false
 IONIC_CLI_HOOK_CTX_CAPACITOR_APP_ID=io.ionic.starter
 IONIC_CLI_HOOK_CTX_CAPACITOR_APP_NAME=ionic-starter-app
-IONIC_CLI_HOOK_CTX_CAPACITOR_VERBOSE=false
+IONIC_CLI_HOOK_CTX_CAPACITOR_CAPACITOR_VERBOSE=false
 ```
 
-Hooks can also be defined in `ionic.config.json`. Define a `hooks` object within the project, where each key is the name of the hook (without the `ionic:` prefix), and the value is a path to a JavaScript file or an array of paths.
+Hooks können auch in `ionic.config.json` definiert werden. Definieren Sie ein "Hooks"-Objekt innerhalb des Projekts, wobei jeder Schlüssel der Name des Hooks (ohne das Präfix "ionic:") und der Wert ein Pfad zu einer JavaScript-Datei oder ein Array von Pfaden ist.
 
-In the following example, the file is imported and run during the `ionic:build:before` hook.
+Im folgenden Beispiel wird die Datei importiert und während des `ionic:build:before`-Hooks ausgeführt.
 
-```json
+``json
 "hooks": {
   "build:before": "./scripts/build-before.js"
 },
 ```
 
-JavaScript hook files should export a single function, which is passed a single argument (`ctx`) whenever the hook executes.
+JavaScript-Hook-Dateien sollten eine einzige Funktion exportieren, der ein einziges Argument (`ctx`) übergeben wird, wenn der Hook ausgeführt wird.
 
-The argument is the context given to the hook file, which differs from hook to hook and with different invocations.
+Das Argument ist der der Hook-Datei übergebene Kontext, der sich von Hook zu Hook und bei verschiedenen Aufrufen unterscheidet.
 
 `./scripts/build-before.js`:
 
@@ -115,38 +115,38 @@ module.exports = function (ctx) {
 };
 ```
 
-## Multi-app Projects
+## Multi-App-Projekte
 
 <small>
-  <em>Available in CLI 6.2.0+</em>
+  <em>Verfügbar in CLI 6.2.0+</em>
 </small>
 
-The Ionic CLI supports a multi-app configuration setup, which involves multiple Ionic apps and shared code within a single repository, or [monorepo](../reference/glossary.md#monorepo).
+Das Ionic CLI unterstützt ein Multi-App-Konfigurations-Setup, das mehrere Ionic-Apps und gemeinsamen Code in einem einzigen Repository oder [monorepo] (../reference/glossary.md#monorepo) umfasst.
 
 :::note
-These docs give an overview of the multi-app feature of the Ionic CLI, but don't really go into details for each framework.
+Diese Dokumente geben einen Überblick über das Multi-App-Feature des Ionic CLI, gehen aber nicht wirklich auf die Details der einzelnen Frameworks ein.
 
-If you're using Angular, please see [this article](https://github.com/ionic-team/ionic-cli/wiki/Angular-Monorepo) for examples.
+Wenn Sie Angular verwenden, lesen Sie bitte [diesen Artikel](https://github.com/ionic-team/ionic-cli/wiki/Angular-Monorepo) für Beispiele.
 :::
 
-### Setup Steps
+### Setup-Schritte
 
-1. Create a directory and initialize a monorepo (see [Project Structure](#project-structure) for full details).
-1. Initialize the monorepo as an Ionic multi-app project. This will create a multi-app `ionic.config.json` file. See [Config File](#config-file) for full details.
+1. Erstellen Sie ein Verzeichnis und initialisieren Sie eine Monorepo (siehe [Projektstruktur](#project-structure) für alle Details).
+1. Initialisieren Sie das Monorepo als ein Ionic Multi-App Projekt. Dies wird eine Multi-App `ionic.config.json` Datei erstellen. Siehe [Config File](#config-file) für weitere Details.
 
    ```shell
    $ ionic init --multi-app
    ```
 
-1. Use `ionic start` to create Ionic apps or `ionic init` to initialize existing apps (see [Adding an App](#adding-an-app) for full details).
+1. Verwenden Sie `ionic start`, um Ionic-Apps zu erstellen, oder `ionic init`, um bestehende Apps zu initialisieren (siehe [Hinzufügen einer App](#adding-an-app) für vollständige Details).
 
-### Project Structure
+### Projektstruktur
 
-In a multi-app project, project structure is flexible. The only requirement is a multi-app `ionic.config.json` file at the root of the repository.
+In einem Multi-App-Projekt ist die Projektstruktur flexibel. Die einzige Voraussetzung ist eine Multi-App `ionic.config.json`-Datei im Stammverzeichnis des Repositorys.
 
-Below is an example setup, where apps in the `apps/` directory are separated from the shared code in the `lib/` directory. Notice the root `ionic.config.json` file and the monorepo's `package.json` file.
+Unten sehen Sie ein Beispiel, bei dem die Anwendungen im Verzeichnis `apps/` vom gemeinsamen Code im Verzeichnis `lib/` getrennt sind. Beachten Sie die Root-Datei `ionic.config.json` und die Datei `package.json` des Monorepos.
 
-```bash
+``bash
 apps/
 ├── myApp/
 └── myOtherApp/
@@ -155,24 +155,24 @@ ionic.config.json
 package.json
 ```
 
-### Config File
+### Konfig-Datei
 
-In a multi-app project, apps share a single `ionic.config.json` file at the root of the repository instead of each app having their own. The multi-app config file contains the configuration for each app by nesting configuration objects in a `projects` object. A default app can be specified using `defaultProject`.
+In einem Multi-App-Projekt teilen sich die Anwendungen eine einzige `ionic.config.json`-Datei im Stammverzeichnis des Repositorys, anstatt dass jede Anwendung ihre eigene hat. Die Multi-App-Konfigurationsdatei enthält die Konfiguration für jede App durch Verschachtelung von Konfigurationsobjekten in einem `projects`-Objekt. Eine Standard-App kann mit `defaultProject` angegeben werden.
 
-Below is an example file, which corresponds to the file structure above.
+Nachfolgend finden Sie eine Beispieldatei, die der obigen Dateistruktur entspricht.
 
-```json
+``json
 {
   "defaultProject": "myApp",
   "projects": {
     "myApp": {
-      "name": "My App",
+      "name": "Meine App",
       "integrations": {},
       "type": "angular",
       "root": "apps/myApp"
     },
     "myOtherApp": {
-      "name": "My Other App",
+      "name": "Meine andere App",
       "integrations": {},
       "type": "angular",
       "root": "apps/myOtherApp"
@@ -181,33 +181,33 @@ Below is an example file, which corresponds to the file structure above.
 }
 ```
 
-When a multi-app project is detected, the Ionic CLI will operate under the context of an app configured in the root `ionic.config.json`. Project selection criteria is as follows:
+Wenn ein Multi-App-Projekt erkannt wird, arbeitet das Ionic CLI unter dem Kontext einer App, die in der Root-Datei `ionic.config.json` konfiguriert ist. Die Projektauswahlkriterien sind wie folgt:
 
-1. If the global CLI option `--project` is specified, the project is looked up by key in the `projects` object. For example, `--project=myApp` will select the `myApp` project.
-1. If the CLI detects it is being run within a project path, configured with the `root` key, it will select the matched project. For example, using the CLI within the `apps/myOtherApp/src` directory will select the `myOtherApp` project.
-1. If a `defaultProject` is specified in `ionic.config.json`, it will select the specified project when the above criteria is not met.
+1. Wenn die globale CLI-Option `--project` angegeben ist, wird das Projekt nach dem Schlüssel im Objekt `projects` gesucht. Zum Beispiel wird mit `--project=myApp` das Projekt `myApp` ausgewählt.
+1. Wenn die Befehlszeilenschnittstelle feststellt, dass sie innerhalb eines mit dem Schlüssel "root" konfigurierten Projektpfads ausgeführt wird, wählt sie das entsprechende Projekt aus. Wird die CLI beispielsweise innerhalb des Verzeichnisses `apps/myOtherApp/src` ausgeführt, wird das Projekt `myOtherApp` ausgewählt.
+1. Wenn ein `defaultProject` in `ionic.config.json` angegeben ist, wird das angegebene Projekt ausgewählt, wenn die oben genannten Kriterien nicht erfüllt sind.
 
-### Adding an App
+### Hinzufügen einer App
 
-Apps can be registered in a multi-app project either by using `ionic start` to create new apps or `ionic init` to initialize existing apps.
+Apps können in einem Multi-App-Projekt registriert werden, indem entweder `ionic start` verwendet wird, um neue Apps zu erstellen, oder `ionic init`, um bestehende Apps zu initialisieren.
 
-#### Using `ionic start`
+#### Verwendung von `ionic start`
 
-If a multi-app project is detected during `ionic start`, the CLI will add the app configuration to the root `ionic.config.json` file instead of creating a project-specific one.
+Wenn ein Multi-App-Projekt während `ionic start` erkannt wird, fügt die CLI die App-Konfiguration zur Stammdatei `ionic.config.json` hinzu, anstatt eine projektspezifische Datei zu erstellen.
 
-Dependency installation can be skipped using `--no-deps` if dependencies are hoisted to the root of the monorepo.
+Die Installation von Abhängigkeiten kann mit `--no-deps` übersprungen werden, wenn die Abhängigkeiten in die Wurzel der Monorepo gehievt werden.
 
-```shell
+``shell
 $ cd apps/
-$ ionic start "My New App" --no-deps
+$ ionic start "Meine neue App" --no-deps
 ```
 
-#### Using `ionic init`
+#### Mit `ionic init`
 
-If an app was created in a way other than `ionic start`, for example by using a prebuilt template, use `ionic init` to register the existing app with the multi-app project.
+Wenn eine App auf eine andere Weise als mit `ionic start` erstellt wurde, z.B. durch Verwendung eines vorgefertigten Templates, verwenden Sie `ionic init`, um die bestehende App im Multi-App-Projekt zu registrieren.
 
 :::note
-Make sure the app doesn't have an existing `ionic.config.json`.
+Stellen Sie sicher, dass die App keine existierende `ionic.config.json` hat.
 :::
 
 ```shell
@@ -215,19 +215,19 @@ $ cd apps/existing-app/
 $ ionic init
 ```
 
-## Advanced Configuration
+## Erweiterte Konfiguration
 
-### Overriding the Build
+### Überschreiben des Builds
 
-Normally, the CLI runs a hard-coded set of commands based on the project type. For example, the standard web asset build for Angular projects is `ng run app:build`. The web asset build can be overridden and `ionic build` can continue to be used by utilizing the `ionic:build` [npm script](https://docs.npmjs.com/misc/scripts). Similarly, the dev server can be overridden by using the `ionic:serve` npm script.
+Normalerweise führt die CLI einen fest kodierten Satz von Befehlen aus, der auf dem Projekttyp basiert. Der Standard-Web-Asset-Build für Angular-Projekte ist zum Beispiel `ng run app:build`. Der Web-Asset-Build kann außer Kraft gesetzt werden und `ionic build` kann weiterhin verwendet werden, indem das [npm-Skript] `ionic:build` verwendet wird (https://docs.npmjs.com/misc/scripts). In ähnlicher Weise kann der Dev-Server mit dem npm-Skript `ionic:serve` außer Kraft gesetzt werden.
 
-Pay close attention to the flags supplied to the script by the Ionic CLI. Irregularities may occur if options are not respected, especially for livereload on devices.
+Achten Sie genau auf die Flags, die dem Skript von der Ionic CLI übergeben werden. Es kann zu Unregelmäßigkeiten kommen, wenn die Optionen nicht beachtet werden, insbesondere bei livereload auf Geräten.
 
-### Command Options
+### Befehlsoptionen
 
-Command options can be expressed with environment variables. They are normally set with `--opt=value` syntax. The naming of these environment variables follows a pattern: start with `IONIC_CMDOPTS_`, add the command name (replacing any spaces with underscores), add the option name (replacing any hyphens with underscores), and then uppercase everything. Boolean flags (command-line options that don't take a value) can be set to `1` or `0`. Strip the `--no-` prefix in boolean flags, if it exists (`--no-open` in ionic serve can be expressed with `IONIC_CMDOPTS_SERVE_OPEN=0`, for example).
+Befehlsoptionen können mit Umgebungsvariablen ausgedrückt werden. Sie werden normalerweise mit der Syntax `--opt=value` gesetzt. Die Benennung dieser Umgebungsvariablen folgt einem Muster: Beginnen Sie mit `IONIC_CMDOPTS_`, fügen Sie den Befehlsnamen hinzu (ersetzen Sie alle Leerzeichen durch Unterstriche), fügen Sie den Optionsnamen hinzu (ersetzen Sie alle Bindestriche durch Unterstriche) und schreiben Sie dann alles in Großbuchstaben. Boolesche Flags (Befehlszeilenoptionen, die keinen Wert annehmen) können auf `1` oder `0` gesetzt werden. Entfernen Sie das Präfix `--no-` in booleschen Flags, wenn es existiert (`--no-open` in ionic serve kann zum Beispiel mit `IONIC_CMDOPTS_SERVE_OPEN=0` ausgedrückt werden).
 
-For example, the command options in `ionic cordova run ios -lc --livereload-port=1234 --host=0.0.0.0` can also be expressed with this series of environment variables:
+Zum Beispiel können die Befehlsoptionen in "ionic cordova run ios -lc --livereload-port=1234 --host=0.0.0.0" auch mit dieser Reihe von Umgebungsvariablen ausgedrückt werden:
 
 ```shell
 $ export IONIC_CMDOPTS_CORDOVA_RUN_LIVERELOAD=1
@@ -236,8 +236,8 @@ $ export IONIC_CMDOPTS_CORDOVA_RUN_LIVERELOAD_PORT=1234
 $ export IONIC_CMDOPTS_CORDOVA_RUN_HOST=0.0.0.0
 ```
 
-If these variables are set in the environment, `ionic cordova build ios` will use new defaults for its options.
+Wenn diese Variablen in der Umgebung gesetzt sind, wird `ionic cordova build ios` neue Standardwerte für seine Optionen verwenden.
 
-### Telemetry
+### Telemetrie
 
-The CLI sends usage data to Ionic to create a better experience. To disable this functionality, run `ionic config set -g telemetry false`.
+Die CLI sendet Nutzungsdaten an Ionic, um ein besseres Erlebnis zu schaffen. Um diese Funktionalität zu deaktivieren, führen Sie `ionic config set -g telemetry false` aus.

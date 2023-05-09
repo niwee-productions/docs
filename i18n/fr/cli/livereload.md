@@ -57,7 +57,7 @@ Rappelez-vous qu'avec l'option `--external`, d'autres personnes sur votre résea
 
 - Avec Cordova, utilisez les options `--device`, `--emulator`, et `--target` pour restreindre les appareils cibles. Utilisez l'option `--list` pour lister toutes les cibles. Voir l'utilisation dans la [documentation sur les commandes] (commands/cordova-run.md).
 - Vous pouvez séparer le processus de serveur de développement et le processus de déploiement en utilisant `ionic serve` et l'option `--liveroad-url` de `ionic cordova run` ou `ionic capacitor run`.
-- Pour Android, il est possible de configurer [adb](https://developer.android.com/studio/command-line/adb) pour toujours rediriger les ports lorsque le serveur adb est en cours d'exécution (voir `adb reverse`). Une fois la redirection de port mise en place, une adresse externe n'est plus nécessaire. Vous pouvez également configurer le pont adb sur TCP de telle sorte que les déploiements ultérieurs ne nécessitent plus de câble USB.
+- Pour Android, il est possible de configurer [adb](https://developer.android.com/studio/command-line/adb) pour toujours rediriger les ports lorsque le serveur adb est en cours d'exécution (voir `adb reverse`). Une fois la redirection de port configurée, une adresse externe n'est plus nécessaire. Vous pouvez également configurer le pont adb sur TCP de telle sorte que les déploiements ultérieurs ne nécessitent plus de câble USB.
 
 ### Utilisation de SSL
 

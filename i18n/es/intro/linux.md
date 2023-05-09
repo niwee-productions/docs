@@ -1,5 +1,5 @@
 ---
-title: Linux Setup
+título: Configuración de Linux
 slug: /intro/linux
 sidebar_label: Linux
 ---
@@ -10,25 +10,25 @@ import Debian from '@components/page/intro/Debian';
 import Arch from '@components/page/intro/Arch';
 import Fedora from '@components/page/intro/Fedora';
 
-<DocsCards>
+<TarjetasDocs>
 
 <DocsCard header="Debian" href="#debian" icon="/icons/debian.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Angular.</p>
+  <p>Una guía completa para ponerte al día con los conceptos básicos de la construcción de aplicaciones Ionic con Angular.</p> <p>
 </DocsCard>
 
 <DocsCard header="Arch" href="#arch" icon="/icons/arch.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Vue.</p>
+  <p>Una completa guía para ponerte al día con los fundamentos de la construcción de apps Ionic con Vue.</p> <p> </p> <p>Los fundamentos de la construcción de apps Ionic con Vue.
 </DocsCard>
 
 <DocsCard header="Fedora" href="#fedora" icon="/icons/fedora.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with React.</p>
+  <p>Una guía completa para ponerte al día con los fundamentos de la creación de aplicaciones Ionic con React.</p> <p> </p> <p><strong>Cómo crear aplicaciones Ionic con React</strong>.
 </DocsCard>
 
 </DocsCards>
 
 <Debian />
 
-### Install needed dependencies
+### Instalar las dependencias necesarias
 
 ```sh
 sudo apt update
@@ -36,13 +36,13 @@ sudo apt upgrade -y
 sudo apt install -y zsh bash git curl ruby bash curl openssh wget git rsync php make jq tree neofetch xclip libnewt yq
 ```
 
-### Set ZSH as default shell
+### Establecer ZSH como shell por defecto
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(que zsh)
 ```
 
-## Install the NiWee Package
+## Instalar el paquete NiWee
 
 ```sh
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
@@ -50,13 +50,13 @@ chsh -s $(which zsh)
 
 <Arch />
 
-### Install needed dependencies
+### Instalar dependencias necesarias
 
 ```sh
 sudo pacman -S zsh bash git curl ruby bash curl openssh wget git rsync php make jq tree neofetch xclip libnewt yq
 ```
 
-### Install YAY
+### Instalar YAY
 
 ```sh
 sudo pacman -S --needed git base-devel
@@ -65,22 +65,22 @@ cd yay
 makepkg -si
 ```
 
-### Install Docker Desktop
+### Instalar Docker Desktop
 
-You can download Docker Desktop from [Docker Hub](https://docs.docker.com/desktop/)
+Puede descargar Docker Desktop desde [Docker Hub](https://docs.docker.com/desktop/)
 
-1. Launch Docker Desktop
-2. Skip the tutorial
-3. Go into settings
-4. Under Kubernetes, check the box Enable Kubernetes
+1. 1. Inicie Docker Desktop
+2. Sáltate el tutorial
+3. Entra en la configuración
+4. En Kubernetes, marque la casilla Activar Kubernetes
 
-### Set ZSH as default shell
+### 5. Establecer ZSH como shell por defecto
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(que zsh)
 ```
 
-### Install the NiWee Package
+### Instalar el paquete NiWee
 
 ```sh
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
@@ -88,28 +88,28 @@ chsh -s $(which zsh)
 
 <Fedora />
 
-### Install needed dependencies
+### Instalar dependencias necesarias
 
 ```sh
 sudo dnf update && sudo dnf upgrade -y && sudo dnf install -y curl git zsh
 ```
 
-### Install Docker Desktop
+### Instalar Docker Desktop
 
-You can download Docker Desktop from [Docker Hub](https://docs.docker.com/desktop/)
+Puede descargar Docker Desktop desde [Docker Hub](https://docs.docker.com/desktop/)
 
-1. Launch Docker Desktop
-2. Skip the tutorial
-3. Go into settings
-4. Under Kubernetes, check the box Enable Kubernetes
+1. 1. Inicie Docker Desktop
+2. Sáltate el tutorial
+3. Entra en la configuración
+4. En Kubernetes, marque la casilla Activar Kubernetes
 
-### Set ZSH as default shell
+### 5. Establecer ZSH como shell por defecto
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(que zsh)
 ```
 
-### Install the NiWee Package
+### Instalar el paquete NiWee
 
 q
 
@@ -117,7 +117,7 @@ q
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
 ```
 
-This command will prevent having to enter your password every time you use sudo:
+Este comando evitará que tengas que introducir tu contraseña cada vez que utilices sudo:
 
 ```sh
 echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers.d/nopwd

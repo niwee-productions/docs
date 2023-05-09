@@ -1,27 +1,27 @@
 ---
-title: The NiWee CLI
-sidebar_label: CLI Installation
+Titel: Die NiWee CLI
+sidebar_label: CLI-Installation
 ---
 
-import CTACard from '@components/page/intro/CTACard';
+importiere CTACard von '@components/page/intro/CTACard';
 
-The NiWee CLI is a condensed bash package that allows you to quickly create new NiWee projects, and manage existing ones. You also get helpers such as installers, git hooks configuration, and more.
+Das NiWee CLI ist ein komprimiertes Bash-Paket, mit dem man schnell neue NiWee-Projekte erstellen und bestehende Projekte verwalten kann. Sie erhalten auch Hilfsprogramme wie Installer, Git-Hooks-Konfiguration und mehr.
 
 <CTACard
-  title="Install on Windows WSL"
-  description="Install the NiWee CLI on any Windows version running WSL1 or WSL2."
-  buttonText="Install"
+  title="Unter Windows WSL installieren"
+  description="Installieren Sie die NiWee CLI auf jeder Windows Version mit WSL1 oder WSL2."
+  buttonText="Installieren"
   href="/intro/windows-wsl"
 />
 <CTACard
-  title="Install on Linux"
-  description="Install the NiWee CLI on Debian, Ubuntu, Zorin, Fedora, Red Hat, Arch, Manjaro, Endeavor, Garuda & more !"
-  buttonText="Install"
+  title="Unter Linux installieren"
+  description="Installieren Sie die NiWee CLI auf Debian, Ubuntu, Zorin, Fedora, Red Hat, Arch, Manjaro, Endeavor, Garuda & mehr !"
+  buttonText="Installieren"
   href="/intro/linux"
 />
 <CTACard
-  title="Install on MacOS"
-  description="Install the MacOS variant of the CLI using homebrew."
-  buttonText="Install"
+  title="Auf MacOS installieren"
+  description="Installieren Sie die MacOS-Variante der CLI mit Homebrew."
+  buttonText="Installieren"
   href="/intro/macos"
 />

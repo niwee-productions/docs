@@ -1,37 +1,37 @@
 # Live Reload
 
-Using the Live Reload option will reload the browser or [Web View](../core-concepts/webview.md) when you change your app's code in your development environment. This is particularly useful for developing using hardware devices.
+Usando la opción Live Reload se recargará el navegador o [Web View](../core-concepts/webview.md) cuando cambies el código de tu aplicación en tu entorno de desarrollo. Esto es particularmente útil para desarrollar usando dispositivos de hardware.
 
-## Terms
+## Términos
 
-Live Reload is a conflated term. With `ionic serve`, Live Reload just refers to reloading the browser when changes are made. Live Reload can also be used with Capacitor and Cordova to provide the same experience on virtual and hardware devices, which eliminates the need for re-deploying a native binary.
+Live Reload es un término confuso. Con `ionic serve`, Live Reload sólo se refiere a recargar el navegador cuando se realizan cambios. Live Reload también se puede utilizar con Capacitor y Cordova para proporcionar la misma experiencia en dispositivos virtuales y de hardware, lo que elimina la necesidad de volver a desplegar un binario nativo.
 
-## Usage
+## Uso
 
-Since Live Reload requires the Web View to load your app from a URL hosted by your computer instead of just reading files on the device, setting up live-reload for hardware devices can be tricky.
+Dado que Live Reload requiere que la Vista Web cargue tu aplicación desde una URL alojada en tu ordenador en lugar de simplemente leer archivos en el dispositivo, configurar Live Reload para dispositivos hardware puede ser complicado.
 
-As with regular device deploys, you will need a cable to connect your device to your computer. The difference is the Ionic CLI configures the Web View to load your app from the dev server on your computer.
+Al igual que con los despliegues regulares de dispositivos, necesitarás un cable para conectar tu dispositivo a tu ordenador. La diferencia es que la CLI de Ionic configura la Vista Web para cargar tu aplicación desde el servidor de desarrollo en tu ordenador.
 
-### Capacitor
+### Condensador
 
-To use Live Reload with Capacitor, make sure you're either using a virtual device or a hardware device connected to the same Wi-Fi network as your computer. Then, you'll need to specify that you want to use an external IP address for the dev server using the `--external` flag.
+Para utilizar Live Reload con Capacitor, asegúrate de que estás utilizando un dispositivo virtual o un dispositivo de hardware conectado a la misma red Wi-Fi que tu ordenador. A continuación, tendrás que especificar que deseas utilizar una dirección IP externa para el servidor de desarrollo utilizando el indicador `--external`.
 
 ```shell
 $ ionic capacitor run ios -l --external
 $ ionic capacitor run android -l --external
 ```
 
-:::note
-Remember, with the `--external` option, others on your Wi-Fi network will be able to access your app.
+:::nota
+Recuerda, con la opción `--external`, otras personas en tu red Wi-Fi podrán acceder a tu aplicación.
 :::
 
-### Cordova
+### :::Cordova
 
 #### Android
 
-For Android devices, the Ionic CLI will automatically forward the dev server port. This means you can use a `localhost` address and it will refer to your computer when loaded in the Web View, not the device.
+Para dispositivos Android, el CLI de Ionic redireccionará automáticamente el puerto del servidor de desarrollo. Esto significa que puedes usar una dirección `localhost` y se referirá a tu ordenador cuando se cargue en la Vista Web, no al dispositivo.
 
-The following all-in-one command will start a live-reload server on `localhost` and deploy the app to an Android device using Cordova:
+El siguiente comando todo-en-uno iniciará un servidor live-reload en `localhost` y desplegará la aplicación en un dispositivo Android usando Cordova:
 
 ```shell
 ionic cordova run android -l
@@ -39,33 +39,33 @@ ionic cordova run android -l
 
 #### iOS
 
-For iOS devices, port forwarding is not yet an option. This means you'll need to connect your device to the same Wi-Fi network as your computer and use an external address for the dev server.
+Para los dispositivos iOS, el reenvío de puertos aún no es una opción. Esto significa que tendrás que conectar tu dispositivo a la misma red Wi-Fi que tu ordenador y utilizar una dirección externa para el servidor de desarrollo.
 
-In some cases, the Ionic CLI won't know the address with which to configure the Web View, so you may be prompted to select one. Be sure to select the address of your computer on your Wi-Fi network.
+En algunos casos, el CLI de Ionic no sabrá la dirección con la que configurar la Vista Web, por lo que se te pedirá que selecciones una. Asegúrate de seleccionar la dirección de tu ordenador en tu red Wi-Fi.
 
-The following all-in-one command will start a live-reload server on **all addresses** and deploy the app to an iOS device using Cordova:
+El siguiente comando todo en uno iniciará un servidor live-reload en **todas las direcciones** y desplegará la app en un dispositivo iOS usando Cordova:
 
 ```shell
 ionic cordova run ios -l --external
 ```
 
-:::note
-Remember, with the `--external` option, others on your Wi-Fi network will be able to access your app.
+:::nota
+Recuerda, con la opción `--external`, otras personas en tu red Wi-Fi podrán acceder a tu aplicación.
 :::
 
-## Tips
+## Consejos
 
-- With Cordova, use the `--device`, `--emulator`, and `--target` options to narrow down target devices. Use the `--list` option to list all targets. See usage in the [command docs](commands/cordova-run.md).
-- You can separate the dev server process and the deploy process by using `ionic serve` and the `--livereload-url` option of `ionic cordova run` or `ionic capacitor run`.
-- For Android, it is possible to configure [adb](https://developer.android.com/studio/command-line/adb) to always forward ports while the adb server is running (see `adb reverse`). With port forwarding set up, an external address would no longer be required. You can also setup the adb bridge over TCP such that subsequent deploys no longer need a USB cable.
+- Con Cordova, utiliza las opciones `--device`, `--emulator` y `--target` para limitar los dispositivos de destino. Utilice la opción `--list` para listar todos los objetivos. Consulte el uso en [command docs](commands/cordova-run.md).
+- Puede separar el proceso del servidor de desarrollo y el proceso de despliegue utilizando `ionic serve` y la opción `--livereload-url` de `ionic cordova run` o `ionic capacitor run`.
+- Para Android, es posible configurar [adb](https://developer.android.com/studio/command-line/adb) para que siempre reenvíe puertos mientras el servidor adb está en ejecución (ver `adb reverse`). Con el reenvío de puertos configurado, ya no será necesaria una dirección externa. También puede configurar el puente adb sobre TCP de forma que los despliegues posteriores ya no necesiten un cable USB.
 
-### Using SSL
+### Uso de SSL
 
-Live reload will use HTTP by default which will cause web APIs that require a secure context (like [web crypto](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)) to fail. To establish a secure context you can use the `--ssl` argument to use HTTPS.
+Live reload utilizará HTTP por defecto, lo que hará que las APIs web que requieran un contexto seguro (como [web crypto](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API)) fallen. Para establecer un contexto seguro puede usar el argumento `--ssl` para usar HTTPS.
 
-For example, with an Angular application you can run the following to pass a certificate and private key and serve your app with HTTPS:
+Por ejemplo, con una aplicación Angular puedes ejecutar lo siguiente para pasar un certificado y una clave privada y servir tu aplicación con HTTPS:
 ```shell
-ionic capacitor run android --livereload --external --ssl -- --ssl-cert='server.crt' --ssl-key='server.key'
+ionic capacitor run android --livereload --external --ssl -- --ssl-cert='servidor.crt' --ssl-key='servidor.key'
 ```
 
-Using a self signed certificate and ensuring it is trusted by the device is a complicated topic and is covered in [this article](https://ionic.zendesk.com/hc/en-us/articles/11384425513623).
+Utilizar un certificado autofirmado y asegurarse de que el dispositivo confía en él es un tema complicado que se trata en [este artículo](https://ionic.zendesk.com/hc/en-us/articles/11384425513623).

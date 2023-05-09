@@ -22,6 +22,6 @@ titre : MacOS Setup
 [Télécharger Visual Studio Code depuis Microsoft](https://code.visualstudio.com/download)
 
 - Ouvrez-le
-- `Command + Shift + p` pour ouvrir la palette de commande
+- `Command + Shift + p` pour ouvrir la palette de commandes
 - Rechercher `path` (chemin)
 - Utiliser la commande Install \'code\' dans PATH

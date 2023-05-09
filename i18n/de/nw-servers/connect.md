@@ -1,19 +1,19 @@
 ---
-title: Connect to a NW Server
+Titel: Verbindung zu einem NW-Server
 ---
 
-## Connecting to the NW Server
+## Verbinden mit dem NW Server
 
-### Classic method via the terminal
+### Klassische Methode über das Terminal
 
 ```sh
 ssh -i ~/.ssh/id_rsa_nw -p 63290 web@nw<version: 1,2,m>.byniwee.cloud
 ```
 
-### Using the package aliases
+### Verwendung der Paket-Aliase
 
 ```sh
-# Example: nw1 connects to nw1.byniwee.cloud by executing the following command:
+# Beispiel: nw1 verbindet sich mit nw1.byniwee.cloud, indem es den folgenden Befehl ausführt:
 # ssh -i ~/.ssh/id_rsa_nw -p 63290 web@nw1.byniwee.cloud
-nw<version: 1,2,m>
+nw<Version: 1,2,m>
 ```

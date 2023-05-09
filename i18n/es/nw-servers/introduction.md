@@ -1,60 +1,60 @@
 ---
-title: About NW Servers
-slug: /introduction
+título: Acerca de los servidores NW
+slug: /introducción
 sidebar_label: Intro
 ---
 
-# About NW Servers
+# Acerca de NW Servers
 
-## Roadmap
+## Hoja de ruta
 
-- [ ] Implement the Intranet via Firezone
+- [ ] Implantar la Intranet a través de Firezone
 
-## There are currently 3 NW Servers
+## Actualmente hay 3 Servidores NW
 
-- [NW1](https://nw1.byniwee.cloud) - The Main server
-- [NW2](https://nw2.byniwee.cloud) - The Git Server
-- [NWM](https://nwm.byniwee.cloud) - The Mail Server
+- [NW1](https://nw1.byniwee.cloud) - El Servidor Principal
+- [NW2](https://nw2.byniwee.cloud) - El Servidor Git
+- NWM](https://nwm.byniwee.cloud) - El Servidor de Correo
 
-## Upcoming servers (not yet available)
+## Próximos servidores (aún no disponibles)
 
-- [NW3](https://nw3.byniwee.cloud) - The VPN Server
-- [NW4](https://nw4.byniwee.cloud) - The First Backup Server
-- [NW5](https://nw5.byniwee.cloud) - The Second Backup Server
-- [NW6](https://nw7.byniwee.cloud) - The Database Server
-- [NW6](https://nw8.byniwee.cloud) - The Database Replication Server
-- [NW7](https://nw9.byniwee.cloud) - The Cache Server
-- [NW8](https://nw10.byniwee.cloud) - The Queue Server
-- [NW9](https://nw11.byniwee.cloud) - The Monitoring Server
+- NW3](https://nw3.byniwee.cloud) - El servidor VPN
+- NW4](https://nw4.byniwee.cloud) - El Primer Servidor de Copias de Seguridad
+- NW5](https://nw5.byniwee.cloud) - El segundo servidor de copia de seguridad
+- NW6](https://nw7.byniwee.cloud) - El Servidor de Base de Datos
+- NW6](https://nw8.byniwee.cloud) - El Servidor de Replicación de Base de Datos
+- NW7](https://nw9.byniwee.cloud) - El servidor de caché
+- NW8](https://nw10.byniwee.cloud) - El Servidor de Colas
+- NW9](https://nw11.byniwee.cloud) - Servidor de supervisión
 
-## Portainer
+## Contenedor
 
-All of the above instances are and/or will be managed via Docker with [Portainer](https://www.portainer.io/). Portainer is a lightweight management UI which allows us to easily manage our Docker containers, images, volumes, networks, and more. It is also useful for debugging issues with containers and images.
+Todas las instancias anteriores son y/o serán gestionadas a través de Docker con [Portainer](https://www.portainer.io/). Portainer es una interfaz de usuario de gestión ligera que nos permite gestionar fácilmente nuestros contenedores Docker, imágenes, volúmenes, redes y mucho más. También es útil para depurar problemas con contenedores e imágenes.
 
 :::info
-Portainer is available at [portainer.byniwee.cloud](https://portainer.byniwee.cloud)
+Portainer está disponible en [portainer.byniwee.cloud](https://portainer.byniwee.cloud)
 :::
 
-:::caution
-Access to the Portainer instance is restricted to the administrators of the NW Servers. If you need access, please contact [Nicolas Boyer](mailto:nicolas@niwee.fr).
+:::precaución
+El acceso a la instancia de Portainer está restringido a los administradores de los Servidores NW. Si necesita acceso, póngase en contacto con [Nicolas Boyer](mailto:nicolas@niwee.fr).
 :::
 
 ## Docker
 
-Docker is a containerization platform that allows us to easily deploy and manage applications. It is a lightweight alternative to virtual machines. Docker containers are built from images, which are essentially templates for the container. Docker images are built from Dockerfiles, which are text files that contain a set of instructions for building an image. Dockerfiles are written in a simple, human-readable syntax, and can be version controlled just like any other code.
+Docker es una plataforma de contenedorización que nos permite desplegar y gestionar aplicaciones fácilmente. Es una alternativa ligera a las máquinas virtuales. Los contenedores Docker se construyen a partir de imágenes, que son esencialmente plantillas para el contenedor. Las imágenes Docker se construyen a partir de Dockerfiles, que son archivos de texto que contienen un conjunto de instrucciones para construir una imagen. Los archivos Docker están escritos en una sintaxis sencilla y legible, y pueden controlarse como cualquier otro código.
 
-Every service on any of the above servers is managed through Docker. This allows us to easily deploy and manage services, and also allows us to easily scale services up or down as needed.
+Todos los servicios de cualquiera de los servidores anteriores se gestionan a través de Docker. Esto nos permite desplegar y gestionar fácilmente los servicios, y también nos permite escalar fácilmente los servicios hacia arriba o hacia abajo según sea necesario.
 
-:::danger A NOTE ON SECURITY
-To be able to connect to the NW Servers, you must follow the next guides. Access to these servers is restricted to specific procedures only. Modification of these procedures will result in the immediate revocation of your access to the servers until further notice.
+:::peligro una nota sobre seguridad
+Para poder conectarse a los servidores NW, debe seguir las siguientes guías. El acceso a estos servidores está restringido únicamente a procedimientos específicos. La modificación de estos procedimientos supondrá la revocación inmediata de su acceso a los servidores hasta nuevo aviso.
 :::
 
-## Backup Paths
+## Rutas de Copia de Seguridad
 
-### All Servers
+### Todos los Servidores
 
 - `/var/lib/mysql`
-- `/home/web/public_html`
+- home/web/public_html
 - `/var/data/portainer`
 
 ### NW1

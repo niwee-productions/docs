@@ -1,25 +1,25 @@
 ---
-title: "nwi new"
-sidebar_label: "new"
+título: "nwi nuevo"
+sidebar_label: "nuevo"
 ---
 
-Build web assets and prepare your app for any platform targets
+Cree activos web y prepare su aplicación para cualquier objetivo de plataforma
 
 ```shell
-ionic build [options]
+ionic build [opciones]
 ```
 
-`ionic build` will perform an Ionic build, which compiles web assets and prepares them for deployment.
+`ionic build` realizará una construcción de Ionic, que compila los recursos web y los prepara para su despliegue.
 
-### Options
+### Opciones
 
- - `--prod`: Flag to use the `production` configuration 
+ - `--prod`: Bandera para usar la configuración `production`.
       
 
-## Examples
+## Ejemplos
 
-```shell
-ionic build 
+``shell
+construcción iónica
 ionic build --prod
 ionic build --watch
 ```

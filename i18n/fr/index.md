@@ -44,10 +44,10 @@ NiWee Docs est un outil de référence complet qui vous donne toutes les répons
   icon="/icons/guide-native-icon.svg"
   hoverIcon="/icons/guide-native-icon-hover.svg"
 >
-  </p> <p>Intégrer des plugins de périphériques natifs, comme Bluetooth, Maps, HealthKit, et plus encore.</p> <p>Les plugins de périphériques natifs, comme Bluetooth, Maps, HealthKit, et plus encore.</p>
+  </p> <p>Intégrer les plugins de périphériques natifs, comme Bluetooth, Maps, HealthKit, et plus encore.</p> <p>Les plugins de périphériques natifs, comme Bluetooth, Maps, HealthKit, et plus encore.</p>
 </DocsCard>
 
   <DocsCard header="CloudPanel" href="/cloudpanel/introduction" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
-    </p> <p>Apprenez à personnaliser et à modifier facilement la conception visuelle de votre application Ionic pour qu'elle corresponde à votre marque.
+    </p> <p>Apprenez à personnaliser et à modifier facilement la conception visuelle de votre application Ionic pour l'adapter à votre marque.
   </DocsCard>
 </DocsCards>

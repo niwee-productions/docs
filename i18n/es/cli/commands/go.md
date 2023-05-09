@@ -13,7 +13,7 @@ ionic build [opciones]
 
 ### Opciones
 
- - `--prod`: Bandera para usar la configuración `production`.
+ - `--prod`: Bandera para utilizar la configuración `production`.
       
 
 ## Ejemplos

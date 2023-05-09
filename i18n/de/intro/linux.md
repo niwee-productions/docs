@@ -1,34 +1,34 @@
 ---
-title: Linux Setup
-slug: /intro/linux
+Titel: Linux-Einrichtung
+slug: /einführung/linux
 sidebar_label: Linux
 ---
 
-import DocsCard from '@components/global/DocsCard';
-import DocsCards from '@components/global/DocsCards';
-import Debian from '@components/page/intro/Debian';
-import Arch from '@components/page/intro/Arch';
-import Fedora from '@components/page/intro/Fedora';
+importiere DocsCard von '@components/global/DocsCard';
+importiere DocsCards von '@components/global/DocsCards';
+import Debian aus '@components/page/intro/Debian';
+import Arch von '@components/page/intro/Arch';
+import Fedora von '@components/page/intro/Fedora';
 
 <DocsCards>
 
 <DocsCard header="Debian" href="#debian" icon="/icons/debian.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Angular.</p>
+  <p>Ein vollständiger Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit Angular vertraut macht.</p>
 </DocsCard>
 
 <DocsCard header="Arch" href="#arch" icon="/icons/arch.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Vue.</p>
+  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit Vue vertraut macht.</p>
 </DocsCard>
 
 <DocsCard header="Fedora" href="#fedora" icon="/icons/fedora.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with React.</p>
+  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit React vertraut macht.</p>
 </DocsCard>
 
 </DocsCards>
 
 <Debian />
 
-### Install needed dependencies
+### Benötigte Abhängigkeiten installieren
 
 ```sh
 sudo apt update
@@ -36,13 +36,13 @@ sudo apt upgrade -y
 sudo apt install -y zsh bash git curl ruby bash curl openssh wget git rsync php make jq tree neofetch xclip libnewt yq
 ```
 
-### Set ZSH as default shell
+### ZSH als Standard-Shell einstellen
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(welche zsh)
 ```
 
-## Install the NiWee Package
+## Installieren Sie das NiWee-Paket
 
 ```sh
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
@@ -50,13 +50,13 @@ chsh -s $(which zsh)
 
 <Arch />
 
-### Install needed dependencies
+### Installation der benötigten Abhängigkeiten
 
 ```sh
 sudo pacman -S zsh bash git curl ruby bash curl openssh wget git rsync php make jq tree neofetch xclip libnewt yq
 ```
 
-### Install YAY
+### YAY installieren
 
 ```sh
 sudo pacman -S --needed git base-devel
@@ -65,22 +65,22 @@ cd yay
 makepkg -si
 ```
 
-### Install Docker Desktop
+### Docker Desktop installieren
 
-You can download Docker Desktop from [Docker Hub](https://docs.docker.com/desktop/)
+Sie können Docker Desktop von [Docker Hub](https://docs.docker.com/desktop/) herunterladen.
 
-1. Launch Docker Desktop
-2. Skip the tutorial
-3. Go into settings
-4. Under Kubernetes, check the box Enable Kubernetes
+1. Starten Sie Docker Desktop
+2. Überspringen Sie das Lernprogramm
+3. Gehen Sie zu den Einstellungen
+4. Aktivieren Sie unter Kubernetes das Kästchen Kubernetes aktivieren
 
-### Set ZSH as default shell
+### ZSH als Standard-Shell einstellen
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(welche zsh)
 ```
 
-### Install the NiWee Package
+### Installieren Sie das NiWee-Paket
 
 ```sh
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
@@ -88,28 +88,28 @@ chsh -s $(which zsh)
 
 <Fedora />
 
-### Install needed dependencies
+### Installation der benötigten Abhängigkeiten
 
 ```sh
 sudo dnf update && sudo dnf upgrade -y && sudo dnf install -y curl git zsh
 ```
 
-### Install Docker Desktop
+### Docker Desktop installieren
 
-You can download Docker Desktop from [Docker Hub](https://docs.docker.com/desktop/)
+Sie können Docker Desktop von [Docker Hub](https://docs.docker.com/desktop/) herunterladen.
 
-1. Launch Docker Desktop
-2. Skip the tutorial
-3. Go into settings
-4. Under Kubernetes, check the box Enable Kubernetes
+1. Starten Sie Docker Desktop
+2. Überspringen Sie das Lernprogramm
+3. Gehen Sie zu den Einstellungen
+4. Aktivieren Sie unter Kubernetes das Kästchen Kubernetes aktivieren
 
-### Set ZSH as default shell
+### ZSH als Standard-Shell einstellen
 
 ```sh
-chsh -s $(which zsh)
+chsh -s $(welche zsh)
 ```
 
-### Install the NiWee Package
+### Installieren Sie das NiWee-Paket
 
 q
 
@@ -117,7 +117,7 @@ q
 /bin/zsh -c "$(curl -fsSL https://gitlab.com/-/snippets/2156826/raw/main/install.sh)"
 ```
 
-This command will prevent having to enter your password every time you use sudo:
+Dieser Befehl verhindert, dass Sie Ihr Passwort jedes Mal eingeben müssen, wenn Sie sudo verwenden:
 
 ```sh
 echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers.d/nopwd
