@@ -11,7 +11,7 @@ The NiWee CLI is a condensed bash package that allows you to quickly create new 
   title="Install on Windows WSL"
   description="Install the NiWee CLI on any Windows version running WSL1 or WSL2."
   buttonText="Install"
-  href="/intro/windows-wsl"
+  href="/intro/wsl"
 />
 <CTACard
   title="Install on Linux"
