@@ -12,7 +12,7 @@ import DocsCards from '@components/global/DocsCards';
   <title>NiWee Docs - Your personal assistant at NiWee Productions</title>
   <meta
     name="description"
-    content="Ionic Framework is an open-source UI toolkit to create your own mobile apps using web technologies with integrations for popular frameworks."
+    content="NiWee Framework is an open-source UI toolkit to create your own mobile apps using web technologies with integrations for popular frameworks."
   />
   <link rel="canonical" href="https://docs.niwee.fr" />
   <link rel="alternate" href="https://docs.niwee.fr" hreflang="x-default" />
@@ -35,7 +35,7 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
   icon="/icons/guide-components-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
 >
-  <p>Dive into Ionic beautifully designed UI component library.</p>
+  <p>Dive into NiWee beautifully designed UI component library.</p>
 </DocsCard>
 
 <DocsCard
@@ -48,6 +48,6 @@ NiWee Docs is a comprehensive reference tool that gives you all the answers you 
 </DocsCard>
 
   <DocsCard header="CloudPanel" href="/cloudpanel/introduction" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
-    <p>Learn to easily customize and modify your Ionic app's visual design to fit your brand.</p>
+    <p>Learn to easily customize and modify your NiWee app's visual design to fit your brand.</p>
   </DocsCard>
 </DocsCards>

@@ -9,7 +9,7 @@ Créez des ressources web et préparez votre application pour toutes les platefo
 nwi install [options]
 ```
 
-`nwi install` va effectuer une compilation Ionic, qui compile les ressources web et les prépare pour le déploiement.
+`nwi install` va effectuer une compilation NiWee, qui compile les ressources web et les prépare pour le déploiement.
 
 ### Options
 

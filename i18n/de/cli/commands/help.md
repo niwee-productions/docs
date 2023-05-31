@@ -7,7 +7,7 @@ sidebar_label: Hilfe
 nwi help [options]
 ```
 
-`ionic build` zeigt Ihnen alle verfügbaren Befehle in der Kli an.
+`niwee build` zeigt Ihnen alle verfügbaren Befehle in der Kli an.
 
 ## Beispiele
 

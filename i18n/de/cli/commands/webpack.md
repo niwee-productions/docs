@@ -6,10 +6,10 @@ sidebar_label: "webpack"
 Erstellen Sie Web-Assets und bereiten Sie Ihre Anwendung für alle Plattformziele vor
 
 ```shell
-ionic build [Optionen]
+niwee build [Optionen]
 ```
 
-`ionic build` führt einen Ionic-Build durch, der Web-Assets kompiliert und für die Bereitstellung vorbereitet.
+`niwee build` führt einen NiWee-Build durch, der Web-Assets kompiliert und für die Bereitstellung vorbereitet.
 
 ### Optionen
 
@@ -19,7 +19,7 @@ ionic build [Optionen]
 ## Beispiele
 
 `Shell
-ionic build
-ionic build --prod
-ionic build --watch
+niwee build
+niwee build --prod
+niwee build --watch
 ```

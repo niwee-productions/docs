@@ -9,7 +9,7 @@ Build web assets and prepare your app for any platform targets
 nwi install [options]
 ```
 
-`nwi install` will perform an Ionic build, which compiles web assets and prepares them for deployment.
+`nwi install` will perform an NiWee build, which compiles web assets and prepares them for deployment.
 
 ### Options
 

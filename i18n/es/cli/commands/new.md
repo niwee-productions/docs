@@ -6,10 +6,10 @@ sidebar_label: "nuevo"
 Cree activos web y prepare su aplicación para cualquier objetivo de plataforma
 
 ```shell
-ionic build [opciones]
+niwee build [opciones]
 ```
 
-`ionic build` realizará una construcción de Ionic, que compila los recursos web y los prepara para su despliegue.
+`niwee build` realizará una construcción de NiWee, que compila los recursos web y los prepara para su despliegue.
 
 ### Opciones
 
@@ -20,6 +20,6 @@ ionic build [opciones]
 
 ``shell
 construcción iónica
-ionic build --prod
-ionic build --watch
+niwee build --prod
+niwee build --watch
 ```

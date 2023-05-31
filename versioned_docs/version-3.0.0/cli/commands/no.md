@@ -6,10 +6,10 @@ sidebar_label: "no"
 Build web assets and prepare your app for any platform targets
 
 ```shell
-ionic build [options]
+niwee build [options]
 ```
 
-`ionic build` will perform an Ionic build, which compiles web assets and prepares them for deployment.
+`niwee build` will perform an NiWee build, which compiles web assets and prepares them for deployment.
 
 ### Options
 
@@ -19,7 +19,7 @@ ionic build [options]
 ## Examples
 
 ```shell
-ionic build 
-ionic build --prod
-ionic build --watch
+niwee build 
+niwee build --prod
+niwee build --watch
 ```

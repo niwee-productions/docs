@@ -9,7 +9,7 @@ Erstellen Sie Web-Assets und bereiten Sie Ihre Anwendung für alle Plattformziel
 nwi install [Optionen]
 ```
 
-nwi install" führt einen Ionic-Build durch, der Web-Assets kompiliert und sie für die Bereitstellung vorbereitet.
+nwi install" führt einen NiWee-Build durch, der Web-Assets kompiliert und sie für die Bereitstellung vorbereitet.
 
 ### Optionen
 

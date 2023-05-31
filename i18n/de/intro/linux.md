@@ -13,15 +13,15 @@ import Fedora von '@components/page/intro/Fedora';
 <DocsCards>
 
 <DocsCard header="Debian" href="#debian" icon="/icons/debian.png">
-  <p>Ein vollständiger Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit Angular vertraut macht.</p>
+  <p>Ein vollständiger Leitfaden, der Sie mit den Grundlagen der Erstellung von NiWee-Apps mit Angular vertraut macht.</p>
 </DocsCard>
 
 <DocsCard header="Arch" href="#arch" icon="/icons/arch.png">
-  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit Vue vertraut macht.</p>
+  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von NiWee-Apps mit Vue vertraut macht.</p>
 </DocsCard>
 
 <DocsCard header="Fedora" href="#fedora" icon="/icons/fedora.png">
-  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von Ionic-Apps mit React vertraut macht.</p>
+  <p>Ein kompletter Leitfaden, der Sie mit den Grundlagen der Erstellung von NiWee-Apps mit React vertraut macht.</p>
 </DocsCard>
 
 </DocsCards>

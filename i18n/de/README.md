@@ -10,7 +10,7 @@ Der Ordner `/docs` enthält alle Markdown-Dateien. Die Seitenstruktur entspricht
 
 ## Versionierung
 
-Dieser Ordner kann auch Komponenten, Assets und alles andere enthalten, das versioniert werden soll, wenn das docusaurus versioning script ausgeführt wird. Wenn es zum Beispiel eine Seitenkomponente gibt, die in der aktuellen Version von Ionic nur für den Abschnitt "Layout" relevant ist, könnte sie zu einem Ordner "Komponenten/" in "docs/layout/" hinzugefügt werden. Wenn das Versionierungsskript ausgeführt wird, wird die Komponente nach `versioned_docs/verion-{X}/layout/_components/` kopiert und es gibt nun eine separate Komponente in `docs/layout/_components/`, die gelöscht oder auf die neueste Version aktualisiert werden kann. Das gleiche Konzept gilt für Bilder und andere Dateien.
+Dieser Ordner kann auch Komponenten, Assets und alles andere enthalten, das versioniert werden soll, wenn das docusaurus versioning script ausgeführt wird. Wenn es zum Beispiel eine Seitenkomponente gibt, die in der aktuellen Version von NiWee nur für den Abschnitt "Layout" relevant ist, könnte sie zu einem Ordner "Komponenten/" in "docs/layout/" hinzugefügt werden. Wenn das Versionierungsskript ausgeführt wird, wird die Komponente nach `versioned_docs/verion-{X}/layout/_components/` kopiert und es gibt nun eine separate Komponente in `docs/layout/_components/`, die gelöscht oder auf die neueste Version aktualisiert werden kann. Das gleiche Konzept gilt für Bilder und andere Dateien.
 
 Wenn Komponenten über Versionen hinweg gemeinsam genutzt werden sollen, können sie in `src/components/` abgelegt werden. Wenn Bilder und andere Dateien über Versionen hinweg gemeinsam genutzt werden sollen, können sie in `static/` abgelegt werden.
 

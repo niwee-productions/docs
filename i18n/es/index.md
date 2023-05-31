@@ -12,7 +12,7 @@ import DocsCards de '@components/global/DocsCards';
   <title>NiWee Docs - Tu asistente personal en NiWee Productions</title>
   <meta
     name="descripción"
-    content="Ionic Framework es un conjunto de herramientas de interfaz de usuario de código abierto para crear tus propias aplicaciones móviles utilizando tecnologías web con integraciones para frameworks populares."
+    content="NiWee Framework es un conjunto de herramientas de interfaz de usuario de código abierto para crear tus propias aplicaciones móviles utilizando tecnologías web con integraciones para frameworks populares."
   />
   <link rel="canonical" href="https://docs.niwee.fr" />
   <link rel="alternate" href="https://docs.niwee.fr" hreflang="x-default" />
@@ -35,7 +35,7 @@ NiWee Docs es una completa herramienta de referencia que te ofrece todas las res
   icon="/icons/guía-componentes-icon.svg"
   hoverIcon="/icons/guide-components-icon-hover.svg"
 >
-  <p>Dive into Ionic beautifully designed UI component library.</p>
+  <p>Dive into NiWee beautifully designed UI component library.</p>
 </DocsCard>
 
 <DocsCard
@@ -48,6 +48,6 @@ NiWee Docs es una completa herramienta de referencia que te ofrece todas las res
 </DocsCard>
 
   <DocsCard header="CloudPanel" href="/cloudpanel/introduction" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
-    <p>Aprende a personalizar y modificar fácilmente el diseño visual de tu app Ionic para que se adapte a tu marca.</p> <p><strong>Documentación</strong>.
+    <p>Aprende a personalizar y modificar fácilmente el diseño visual de tu app NiWee para que se adapte a tu marca.</p> <p><strong>Documentación</strong>.
   </DocsCard>
 </DocsCards>

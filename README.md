@@ -1,12 +1,12 @@
-# Ionic Docs
+# NiWee Docs
 
-The official [Ionic](https://ionicframework.com) documentation, built with [Docusaurus](https://docusaurus.io/).
+The official [NiWee](https://niweeframework.com) documentation, built with [Docusaurus](https://docusaurus.io/).
 
-[![Crowdin](https://badges.crowdin.net/ionic-docs/localized.svg)](https://crowdin.com/project/ionic-docs)
+[![Crowdin](https://badges.crowdin.net/niwee-docs/localized.svg)](https://crowdin.com/project/niwee-docs)
 
 ---
 
 - [Contributing Guide](./CONTRIBUTING.md) :flashlight:
-<!-- - [Project Board](https://github.com/ionic-team/ionic-docs/projects/3) :pushpin: -->
+<!-- - [Project Board](https://github.com/niwee-team/niwee-docs/projects/3) :pushpin: -->
 # DOCS
 # DOCS

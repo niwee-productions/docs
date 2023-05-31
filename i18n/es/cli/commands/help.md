@@ -7,7 +7,7 @@ sidebar_label: ayuda
 nwi help [opciones]
 ```
 
-`ionic build` te mostrará todos los comandos disponibles en la cli.
+`niwee build` te mostrará todos los comandos disponibles en la cli.
 
 ## Ejemplos
 

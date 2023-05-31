@@ -6,10 +6,10 @@ sidebar_label : "shutdown"
 Créez des actifs web et préparez votre application pour toutes les plateformes cibles
 
 ```shell
-ionic build [options]
+niwee build [options]
 ```
 
-`ionic build` exécutera une compilation Ionic, qui compile les ressources web et les prépare pour le déploiement.
+`niwee build` exécutera une compilation NiWee, qui compile les ressources web et les prépare pour le déploiement.
 
 ### Options
 
@@ -19,7 +19,7 @@ ionic build [options]
 ## Exemples
 
 ```shell
-ionic build
-ionic build --prod
-ionic build --watch
+niwee build
+niwee build --prod
+niwee build --watch
 ```

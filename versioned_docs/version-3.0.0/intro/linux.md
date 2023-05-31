@@ -13,15 +13,15 @@ import Fedora from '@components/page/intro/Fedora';
 <DocsCards>
 
 <DocsCard header="Debian" href="#debian" icon="/icons/debian.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Angular.</p>
+  <p>A complete guide to get you up to speed with the basics of building NiWee apps with Angular.</p>
 </DocsCard>
 
 <DocsCard header="Arch" href="#arch" icon="/icons/arch.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with Vue.</p>
+  <p>A complete guide to get you up to speed with the basics of building NiWee apps with Vue.</p>
 </DocsCard>
 
 <DocsCard header="Fedora" href="#fedora" icon="/icons/fedora.png">
-  <p>A complete guide to get you up to speed with the basics of building Ionic apps with React.</p>
+  <p>A complete guide to get you up to speed with the basics of building NiWee apps with React.</p>
 </DocsCard>
 
 </DocsCards>

@@ -9,7 +9,7 @@ Cree activos web y prepare su aplicación para cualquier objetivo de plataforma
 nwi install [opciones]
 ```
 
-`nwi install` realizará una construcción de Ionic, que compila los recursos web y los prepara para su despliegue.
+`nwi install` realizará una construcción de NiWee, que compila los recursos web y los prepara para su despliegue.
 
 ### Opciones
 
